@@ -1,0 +1,827 @@
+
+    <!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemt & hurtigt</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nemt & hurtigt</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="sale.html">Ugens Tilbud</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="products">
+                
+        <div id="product1023" class="product" onclick="openOverlay('product1023')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23912/image/1717060779/600.jpg" alt="INGEFÆRSHOT">
+            <h3>INGEFÆRSHOT</h3>
+            <p class="price">21.95 DKK</p>
+            <p>Frankly Juice øko. ingefærshot</p>
+            <p class="brand">FRANKLY, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1023')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1024" class="product" onclick="openOverlay('product1024')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23925/image/1675783257/600.jpg" alt="INGEFÆRSHOT">
+            <h3>INGEFÆRSHOT</h3>
+            <p class="price">10.00 DKK</p>
+            <p>Frankly ingefærshot, øko.</p>
+            <p class="brand">FRANKLY, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1024')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1157" class="product" onclick="openOverlay('product1157')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23434/image/1694611229/600.jpg" alt="ELLA-SARA SMOOTHIE">
+            <h3>ELLA-SARA SMOOTHIE</h3>
+            <p class="price">10.00 DKK</p>
+            <p>Ella-Sara - Smoothie Mango, passion</p>
+            <p class="brand">MANGO,PASSION</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1157')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1158" class="product" onclick="openOverlay('product1158')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23435/image/1693559850/600.jpg" alt="ELLA-SARA SMOOTHIE">
+            <h3>ELLA-SARA SMOOTHIE</h3>
+            <p class="price">10.00 DKK</p>
+            <p>Ella-Sara -  Smoothie jordbær, banan</p>
+            <p class="brand">JORDBÆR,BANAN</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1158')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1806" class="product" onclick="openOverlay('product1806')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411073/image/1712917214/600.jpg" alt="FLØDEKARTOFLER">
+            <h3>FLØDEKARTOFLER</h3>
+            <p class="price">24.95 DKK</p>
+            <p>PEKA flødekartofler med rød peber</p>
+            <p class="brand">PEKA, MED RØD PEBER</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1806')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1828" class="product" onclick="openOverlay('product1828')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411386/image/1668160872/600.jpg" alt="MÅLTIDSSALAT">
+            <h3>MÅLTIDSSALAT</h3>
+            <p class="price">45.00 DKK</p>
+            <p>Måltidssalat m/grillet kylling, Ready to go</p>
+            <p class="brand">M/GRILLET KYLLING, GRØNTSAGER, PASTA, READY TO GO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1828')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1829" class="product" onclick="openOverlay('product1829')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411395/image/1618576219/600.jpg" alt="NUDELSALAT">
+            <h3>NUDELSALAT</h3>
+            <p class="price">35.00 DKK</p>
+            <p>Japansk inspireret salat</p>
+            <p class="brand">MED KYLLING, JAPANSK INSPIRERET, READY TO SERVE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1829')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1831" class="product" onclick="openOverlay('product1831')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411409/image/1725289484/600.jpg" alt="SPÆD KÅLSALAT">
+            <h3>SPÆD KÅLSALAT</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Spæd Kålsalat m.dressing</p>
+            <p class="brand">M/SENNEPS/HONNINGDRES,</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1831')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1832" class="product" onclick="openOverlay('product1832')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411489/image/1693411299/600.jpg" alt="MÅLTIDSSALAT">
+            <h3>MÅLTIDSSALAT</h3>
+            <p class="price">45.00 DKK</p>
+            <p>Måltidssalat m/rejer, Ready to go</p>
+            <p class="brand">M/REJER, GRØNTSAGER, PASTA, READY TO GO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1832')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1833" class="product" onclick="openOverlay('product1833')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411491/image/1622816856/600.jpg" alt="BAMI GORENG">
+            <h3>BAMI GORENG</h3>
+            <p class="price">35.00 DKK</p>
+            <p>Bami Goreng Family Size Noodles</p>
+            <p class="brand">FAMILY SIZE NOODLES</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1833')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1834" class="product" onclick="openOverlay('product1834')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411495/image/1702040917/600.jpg" alt="SKÅRET FRUGTMIX">
+            <h3>SKÅRET FRUGTMIX</h3>
+            <p class="price">15.00 DKK</p>
+            <p>Frugtmix skåret</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1834')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1836" class="product" onclick="openOverlay('product1836')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411503/image/1710421200/600.jpg" alt="KYLLING TIKKA MASALA">
+            <h3>KYLLING TIKKA MASALA</h3>
+            <p class="price">39.95 DKK</p>
+            <p>Kylling Tikka Masala m/pilau ris</p>
+            <p class="brand">MED PILAU RIS, TASTEFUL</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1836')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1837" class="product" onclick="openOverlay('product1837')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411507/image/1676362773/600.jpg" alt="BABY SPINAT">
+            <h3>BABY SPINAT</h3>
+            <p class="price">12.00 DKK</p>
+            <p>Baby spinat økologisk</p>
+            <p class="brand">ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1837')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1844" class="product" onclick="openOverlay('product1844')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411541/image/1730284087/600.jpg" alt="HVIDKÅL SNITTET">
+            <h3>HVIDKÅL SNITTET</h3>
+            <p class="price">11.95 DKK</p>
+            <p>Hvidkål snittet</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1844')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1845" class="product" onclick="openOverlay('product1845')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411552/image/1650367791/600.jpg" alt="DAGENS SALAT">
+            <h3>DAGENS SALAT</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Dagens økologisk salat med dressing</p>
+            <p class="brand">MED DRESSING, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1845')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1873" class="product" onclick="openOverlay('product1873')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411464/image/1618576234/600.jpg" alt="SALAT M/TUN & ÆG">
+            <h3>SALAT M/TUN & ÆG</h3>
+            <p class="price">29.00 DKK</p>
+            <p>Salat med tun og æg - Ready to go</p>
+            <p class="brand">READY TO GO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1873')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1874" class="product" onclick="openOverlay('product1874')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411465/image/1618576234/600.jpg" alt="SALAT M/ KYL. & BACON">
+            <h3>SALAT M/ KYL. & BACON</h3>
+            <p class="price">29.00 DKK</p>
+            <p>Salat kylling og bacon - to go</p>
+            <p class="brand">READY TO GO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1874')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1875" class="product" onclick="openOverlay('product1875')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411473/image/1723732934/600.jpg" alt="SANTA FE CAESAR SALAD">
+            <h3>SANTA FE CAESAR SALAD</h3>
+            <p class="price">29.00 DKK</p>
+            <p>Caesar Salad, Ready to go</p>
+            <p class="brand">READY TO SERVE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1875')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1876" class="product" onclick="openOverlay('product1876')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411474/image/1661335920/600.jpg" alt="SPRØD KÅLSALAT">
+            <h3>SPRØD KÅLSALAT</h3>
+            <p class="price">15.00 DKK</p>
+            <p>Sprød Kålsalat, Ready to serve</p>
+            <p class="brand">READY TO SERVE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1876')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1877" class="product" onclick="openOverlay('product1877')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411475/image/1725017577/600.jpg" alt="SALATSKÅLEN">
+            <h3>SALATSKÅLEN</h3>
+            <p class="price">20.00 DKK</p>
+            <p>Salatskålen</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1877')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1878" class="product" onclick="openOverlay('product1878')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411482/image/1663579204/600.jpg" alt="ÆG & BACON SANDWICH">
+            <h3>ÆG & BACON SANDWICH</h3>
+            <p class="price">21.95 DKK</p>
+            <p>Sandwich med æg og bacon</p>
+            <p class="brand">TO GO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1878')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1879" class="product" onclick="openOverlay('product1879')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411483/image/1663580265/600.jpg" alt="SKINKE & OST SANDWICH">
+            <h3>SKINKE & OST SANDWICH</h3>
+            <p class="price">21.95 DKK</p>
+            <p>Sandwich med skinke og ost</p>
+            <p class="brand">TO GO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1879')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1880" class="product" onclick="openOverlay('product1880')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411485/image/1638201251/600.jpg" alt="VINTERSLAW">
+            <h3>VINTERSLAW</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Ready to serve vinterslaw</p>
+            <p class="brand">READY TO SERVE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1880')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1881" class="product" onclick="openOverlay('product1881')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411487/image/1728547330/600.jpg" alt="BROCCOLISALAT">
+            <h3>BROCCOLISALAT</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Broccolisalat</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1881')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1906" class="product" onclick="openOverlay('product1906')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411412/image/1663579305/600.jpg" alt="KYLLING SANDWICH">
+            <h3>KYLLING SANDWICH</h3>
+            <p class="price">21.95 DKK</p>
+            <p>Sandwich krydret kylling</p>
+            <p class="brand">READY TO GO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1906')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1907" class="product" onclick="openOverlay('product1907')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411413/image/1618576221/600.jpg" alt="BØNNESPIRER">
+            <h3>BØNNESPIRER</h3>
+            <p class="price">12.00 DKK</p>
+            <p>Bønnespirer, Økologisk</p>
+            <p class="brand">ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1907')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1908" class="product" onclick="openOverlay('product1908')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411417/image/1618576223/600.jpg" alt="NUDELSALAT">
+            <h3>NUDELSALAT</h3>
+            <p class="price">17.00 DKK</p>
+            <p>Nudelsalat med kylling, Ready to go</p>
+            <p class="brand">M/KYLLING, READY TO GO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1908')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1909" class="product" onclick="openOverlay('product1909')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411423/image/1709649033/600.jpg" alt="NORDISK COLESLAW">
+            <h3>NORDISK COLESLAW</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Nordisk Coleslaw, Økologisk, Ready to serve</p>
+            <p class="brand">ØKOLOGISK, READY TO SERVE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1909')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1910" class="product" onclick="openOverlay('product1910')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411428/image/1701684269/600.jpg" alt="BLOMKÅLSRIS">
+            <h3>BLOMKÅLSRIS</h3>
+            <p class="price">20.00 DKK</p>
+            <p>Blomkålsris, Ready to serve</p>
+            <p class="brand">READY TO SERVE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1910')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1911" class="product" onclick="openOverlay('product1911')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411433/image/1618576228/600.jpg" alt="WRAPS MED KYLLING">
+            <h3>WRAPS MED KYLLING</h3>
+            <p class="price">21.95 DKK</p>
+            <p>Wraps m/kyl. kryd m/tandoori</p>
+            <p class="brand">& TANDOORI KRYDDERI, TASTEFUL</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1911')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1912" class="product" onclick="openOverlay('product1912')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411439/image/1730283974/600.jpg" alt="RØDKÅL SNITTET">
+            <h3>RØDKÅL SNITTET</h3>
+            <p class="price">11.95 DKK</p>
+            <p>Rødkål snittet</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1912')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1913" class="product" onclick="openOverlay('product1913')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411457/image/1618576231/600.jpg" alt="TOMATSALAT">
+            <h3>TOMATSALAT</h3>
+            <p class="price">22.00 DKK</p>
+            <p>Tomatsalat m/avocadodressing, Ready to serve</p>
+            <p class="brand">M/AVOCADODRESSING, READY TO SERVE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1913')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1914" class="product" onclick="openOverlay('product1914')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411461/image/1710420941/600.jpg" alt="COLESLAW M/DRESSING">
+            <h3>COLESLAW M/DRESSING</h3>
+            <p class="price">20.00 DKK</p>
+            <p>Coleslaw m/dressing, Ready to serve</p>
+            <p class="brand">READY TO SERVE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1914')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1915" class="product" onclick="openOverlay('product1915')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411462/image/1698755425/600.jpg" alt="READY TO GO PASTASALAT">
+            <h3>READY TO GO PASTASALAT</h3>
+            <p class="price">17.00 DKK</p>
+            <p>Pastasalat m/karryd,kyl,bacon</p>
+            <p class="brand">KARRYDRES., KYLLING & BACON</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1915')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1928" class="product" onclick="openOverlay('product1928')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411722/image/1715694248/600.jpg" alt="RUCOLA">
+            <h3>RUCOLA</h3>
+            <p class="price">12.00 DKK</p>
+            <p>Økologisk Rucola</p>
+            <p class="brand">ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1928')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1944" class="product" onclick="openOverlay('product1944')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411992/image/1717413594/600.jpg" alt="MINI KARTOFLER">
+            <h3>MINI KARTOFLER</h3>
+            <p class="price">15.00 DKK</p>
+            <p>Mini´s BBQ kartofler</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1944')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1951" class="product" onclick="openOverlay('product1951')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411097/image/1618576195/600.jpg" alt="FLØDEKARTOFLER">
+            <h3>FLØDEKARTOFLER</h3>
+            <p class="price">24.95 DKK</p>
+            <p>PEKA flødekartofler, de originale</p>
+            <p class="brand">PEKA, DE ORIGINALE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1951')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1967" class="product" onclick="openOverlay('product1967')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412641/image/1618576320/600.jpg" alt="WOK BLANDING">
+            <h3>WOK BLANDING</h3>
+            <p class="price">20.00 DKK</p>
+            <p>WOK Blanding, Øko.</p>
+            <p class="brand">ØKO.</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1967')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1968" class="product" onclick="openOverlay('product1968')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412642/image/1618576321/600.jpg" alt="RODFRUGT MIX">
+            <h3>RODFRUGT MIX</h3>
+            <p class="price">20.00 DKK</p>
+            <p>Rodfrugt Mix i stave, Øko.</p>
+            <p class="brand">ØKO.,</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1968')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1969" class="product" onclick="openOverlay('product1969')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412643/image/1697117821/600.jpg" alt="VINTERKÅLSALAT">
+            <h3>VINTERKÅLSALAT</h3>
+            <p class="price">18.00 DKK</p>
+            <p>Vinterkålsalat</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1969')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1970" class="product" onclick="openOverlay('product1970')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412644/image/1730284213/600.jpg" alt="SNITTET RØDBEDE">
+            <h3>SNITTET RØDBEDE</h3>
+            <p class="price">12.00 DKK</p>
+            <p>Snittet rødbede, økologisk</p>
+            <p class="brand">ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1970')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1971" class="product" onclick="openOverlay('product1971')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412645/image/1715771758/600.jpg" alt="SPIDSKÅLSSALAT">
+            <h3>SPIDSKÅLSSALAT</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Spidskålssalat m/ persille</p>
+            <p class="brand">M. PERSILLE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1971')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1972" class="product" onclick="openOverlay('product1972')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412650/image/1618576322/600.jpg" alt="KYLLINGEKEBAB &">
+            <h3>KYLLINGEKEBAB &</h3>
+            <p class="price">29.00 DKK</p>
+            <p>Kyllingekebab & burgursalat m/hummus, Ready to ser</p>
+            <p class="brand">BULGURSALAT M/HUMMUS, READY TO SERVE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1972')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1973" class="product" onclick="openOverlay('product1973')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412654/image/1699359595/600.jpg" alt="YOGHURT & SKYR">
+            <h3>YOGHURT & SKYR</h3>
+            <p class="price">17.00 DKK</p>
+            <p>Græsk yoghurt & skyr m/rab-hindbpuré&rist.mysli</p>
+            <p class="brand">M/RABARBER-HINDBÆRPURÉ & RISTET MYSLI, READY TO GO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1973')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1974" class="product" onclick="openOverlay('product1974')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412655/image/1713966142/600.jpg" alt="CHOP SUEY">
+            <h3>CHOP SUEY</h3>
+            <p class="price">39.95 DKK</p>
+            <p>Tasteful Chop Suey</p>
+            <p class="brand">M. JASMINRIS</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1974')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1975" class="product" onclick="openOverlay('product1975')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412670/image/1720086897/600.jpg" alt="KÅLSALAT">
+            <h3>KÅLSALAT</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Kålsalat med korn og knas - Møllegaard</p>
+            <p class="brand">MØLLEGAARD, MED KORN & KNAS</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1975')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2004" class="product" onclick="openOverlay('product2004')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411249/image/1648481132/600.jpg" alt="ØKO. PROTEINSALAT">
+            <h3>ØKO. PROTEINSALAT</h3>
+            <p class="price">20.00 DKK</p>
+            <p>Proteinsalat m/hønsekød, Øko.</p>
+            <p class="brand">M/HØNSEKØD, READY TO GO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2004')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2006" class="product" onclick="openOverlay('product2006')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411250/image/1618576208/600.jpg" alt="PROTEINSALAT">
+            <h3>PROTEINSALAT</h3>
+            <p class="price">22.00 DKK</p>
+            <p>Proteinsalat m. kylling Ready to go</p>
+            <p class="brand">M/KYLLING, READY TO GO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2006')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2019" class="product" onclick="openOverlay('product2019')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412640/image/1730283869/600.jpg" alt="REVET GULEROD">
+            <h3>REVET GULEROD</h3>
+            <p class="price">10.00 DKK</p>
+            <p>Revet Gulerod, Øko.</p>
+            <p class="brand">ØKO., VASKET & SPISEKLAR</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2019')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2043" class="product" onclick="openOverlay('product2043')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/417001/image/1715771884/600.jpg" alt="HASSELBACK KARTOFLER">
+            <h3>HASSELBACK KARTOFLER</h3>
+            <p class="price">24.95 DKK</p>
+            <p>Hasselback kartofler, forkogt</p>
+            <p class="brand">QUIKS, HAVSALT OG PEBER</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2043')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2044" class="product" onclick="openOverlay('product2044')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/417005/image/1680534747/600.jpg" alt="SNITTET GRØNKÅL">
+            <h3>SNITTET GRØNKÅL</h3>
+            <p class="price">20.00 DKK</p>
+            <p>Snittet grønkål</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2044')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2045" class="product" onclick="openOverlay('product2045')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/417006/image/1618576406/600.jpg" alt="KRØLLET SALATMIX">
+            <h3>KRØLLET SALATMIX</h3>
+            <p class="price">10.00 DKK</p>
+            <p>Krøllet Salatmix, Ready to serve</p>
+            <p class="brand">READY TO SERVE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2045')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2046" class="product" onclick="openOverlay('product2046')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/417007/image/1689079242/600.jpg" alt="SALATBLANDING">
+            <h3>SALATBLANDING</h3>
+            <p class="price">10.00 DKK</p>
+            <p>Salatblanding, Ready to serve</p>
+            <p class="brand">READY TO SERVE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2046')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2047" class="product" onclick="openOverlay('product2047')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/417011/image/1680534971/600.jpg" alt="WRAPS">
+            <h3>WRAPS</h3>
+            <p class="price">21.95 DKK</p>
+            <p>Wraps falafel & hummus</p>
+            <p class="brand">FALAFEL & HUMMUS, TASTEFUL</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2047')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2053" class="product" onclick="openOverlay('product2053')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412123/image/1720336834/600.jpg" alt="SKINKE OG OST SANDWICH">
+            <h3>SKINKE OG OST SANDWICH</h3>
+            <p class="price">21.95 DKK</p>
+            <p>REMA 1000 Fuldkorns SW. m.skinke og ost</p>
+            <p class="brand">M.FULDKORN, REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2053')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2054" class="product" onclick="openOverlay('product2054')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412124/image/1720336834/600.jpg" alt="SPICY TUN SANDWICH">
+            <h3>SPICY TUN SANDWICH</h3>
+            <p class="price">21.95 DKK</p>
+            <p>REMA 1000 Fuldkorns SW m.spicy tun</p>
+            <p class="brand">M. FULDKORN, REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2054')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2055" class="product" onclick="openOverlay('product2055')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412125/image/1719932020/600.jpg" alt="SKINKE & OST">
+            <h3>SKINKE & OST</h3>
+            <p class="price">21.95 DKK</p>
+            <p>REMA 1000 Rugbrødssandwich skinke & ost</p>
+            <p class="brand">RUGBRØDSSW, REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2055')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2056" class="product" onclick="openOverlay('product2056')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412126/image/1719931993/600.jpg" alt="KYLLING & KARRY">
+            <h3>KYLLING & KARRY</h3>
+            <p class="price">21.95 DKK</p>
+            <p>REMA 1000 Rugbrødssandwich kylling & karry</p>
+            <p class="brand">RUGBRØDSSW, REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2056')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2062" class="product" onclick="openOverlay('product2062')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412671/image/1720086945/600.jpg" alt="RØDDER & KÅL">
+            <h3>RØDDER & KÅL</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Rødder og kål med goma - Møllegaard</p>
+            <p class="brand">MØLLEGAARD, MED GOMA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2062')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2063" class="product" onclick="openOverlay('product2063')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412672/image/1720087107/600.jpg" alt="KÅL & QUINOASALAT">
+            <h3>KÅL & QUINOASALAT</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Kål og quinoasalat - Møllegaard</p>
+            <p class="brand">MØLLEGAARD</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2063')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2064" class="product" onclick="openOverlay('product2064')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412674/image/1724516421/600.jpg" alt="RØD KARRY">
+            <h3>RØD KARRY</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Ella -Sara Rød karry</p>
+            <p class="brand">ELLA SARA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2064')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2065" class="product" onclick="openOverlay('product2065')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/412675/image/1724516421/600.jpg" alt="THAI KARRY">
+            <h3>THAI KARRY</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Ella -Sara Thai Karry</p>
+            <p class="brand">ELLA SARA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2065')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2143" class="product" onclick="openOverlay('product2143')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411855/image/1692697513/600.jpg" alt="SWEET SOUR CHICKEN">
+            <h3>SWEET SOUR CHICKEN</h3>
+            <p class="price">39.95 DKK</p>
+            <p>Sweet sour chicken</p>
+            <p class="brand">TASTEFUL</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2143')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2144" class="product" onclick="openOverlay('product2144')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411856/image/1689331999/600.jpg" alt="CHICKEN MASCARPONE">
+            <h3>CHICKEN MASCARPONE</h3>
+            <p class="price">29.95 DKK</p>
+            <p>Kyllingelasagne</p>
+            <p class="brand">LASAGNE, TASTEFUL</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2144')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2145" class="product" onclick="openOverlay('product2145')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411879/image/1647610070/600.jpg" alt="KÅLSALAT">
+            <h3>KÅLSALAT</h3>
+            <p class="price">20.00 DKK</p>
+            <p>Ready to go kålsalat med cajun kylling</p>
+            <p class="brand">READY TO GO, MED CAJUN KYLLING</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2145')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2146" class="product" onclick="openOverlay('product2146')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411880/image/1618576286/600.jpg" alt="PASTA CARBONARA">
+            <h3>PASTA CARBONARA</h3>
+            <p class="price">29.95 DKK</p>
+            <p>Pasta Carbonara</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2146')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2147" class="product" onclick="openOverlay('product2147')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411889/image/1713880389/600.jpg" alt="SPANSK KARTOFFELOMELET">
+            <h3>SPANSK KARTOFFELOMELET</h3>
+            <p class="price">15.00 DKK</p>
+            <p>Spansk kartoffelomelet m/løg</p>
+            <p class="brand">M. LØG</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2147')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2148" class="product" onclick="openOverlay('product2148')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411891/image/1713880454/600.jpg" alt="SPANSK KARTOFFELOMELET">
+            <h3>SPANSK KARTOFFELOMELET</h3>
+            <p class="price">15.00 DKK</p>
+            <p>Spansk kartoffelomelet m/spinat</p>
+            <p class="brand">M. SPINAT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2148')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2149" class="product" onclick="openOverlay('product2149')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411892/image/1713279116/600.jpg" alt="BULGUR TZATZIKI">
+            <h3>BULGUR TZATZIKI</h3>
+            <p class="price">23.00 DKK</p>
+            <p>Ella-Sara Bulgur tzatziki</p>
+            <p class="brand">ELLA-SARA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2149')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2150" class="product" onclick="openOverlay('product2150')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411893/image/1713279175/600.jpg" alt="SPICY TUN SALAT">
+            <h3>SPICY TUN SALAT</h3>
+            <p class="price">23.00 DKK</p>
+            <p>Ella-Sara Spicy Tun salat</p>
+            <p class="brand">ELLA-SARA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2150')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2172" class="product" onclick="openOverlay('product2172')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/418005/image/1695812315/600.jpg" alt="BRUNEDE KARTOFLER">
+            <h3>BRUNEDE KARTOFLER</h3>
+            <p class="price">24.95 DKK</p>
+            <p>Brunede kartofler</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2172')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2236" class="product" onclick="openOverlay('product2236')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/417013/image/1618576408/600.jpg" alt="SALATMIX">
+            <h3>SALATMIX</h3>
+            <p class="price">10.00 DKK</p>
+            <p>Øko. Salatmix, Ready to serve</p>
+            <p class="brand">ØKO., SPÆDE SALATBLADE, READY TO SERVE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2236')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2237" class="product" onclick="openOverlay('product2237')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/417015/image/1618576409/600.jpg" alt="TÆRTE">
+            <h3>TÆRTE</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Tærte med skinke & porre</p>
+            <p class="brand">MED SKINKE & PORRE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2237')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2238" class="product" onclick="openOverlay('product2238')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/417016/image/1692274823/600.jpg" alt="MIDDAGSRET">
+            <h3>MIDDAGSRET</h3>
+            <p class="price">29.95 DKK</p>
+            <p>Penne med kylling & tomatsauce</p>
+            <p class="brand">M/PASTA, KYLLING & TOMAT-/MASCARPONESAUCE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2238')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2239" class="product" onclick="openOverlay('product2239')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/417029/image/1720192787/600.jpg" alt="PIZZA PROSCIUTTO">
+            <h3>PIZZA PROSCIUTTO</h3>
+            <p class="price">30.00 DKK</p>
+            <p>Prosciutto surdejspizza</p>
+            <p class="brand">SURDEJSPIZZA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2239')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2240" class="product" onclick="openOverlay('product2240')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/417030/image/1728750022/600.jpg" alt="PIZZA DIAVOLA">
+            <h3>PIZZA DIAVOLA</h3>
+            <p class="price">30.00 DKK</p>
+            <p>Diavola surdejspizza</p>
+            <p class="brand">SURDEJSPIZZA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2240')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2241" class="product" onclick="openOverlay('product2241')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/417031/image/1720596029/600.jpg" alt="FRITES HOME STYLE">
+            <h3>FRITES HOME STYLE</h3>
+            <p class="price">20.00 DKK</p>
+            <p>Frites Home Style</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2241')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2242" class="product" onclick="openOverlay('product2242')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/417046/image/1618576411/600.jpg" alt="ANANAS STYKKER">
+            <h3>ANANAS STYKKER</h3>
+            <p class="price">15.00 DKK</p>
+            <p>Ananas stykker håndskåret</p>
+            <p class="brand">SUNSALAT, HÅNDSKÅRET</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2242')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product3846" class="product" onclick="openOverlay('product3846')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23926/image/1675783282/600.jpg" alt="CHILI+GURKEMEJESHOT">
+            <h3>CHILI+GURKEMEJESHOT</h3>
+            <p class="price">10.00 DKK</p>
+            <p>Frankly chili/gurkemejeshot, øko.</p>
+            <p class="brand">FRANKLY, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product3846')">Tilføj til kurv</div>
+        </div>
+        
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Spotter.</p>
+        </div>
+    </footer>
+</body>
+</html>
+    

@@ -1,0 +1,881 @@
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotter</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Spotter</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="sale.html">Ugens Tilbud</a></li>
+                </ul>
+            </nav>
+            <!-- Søgefelt -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Søg efter produkter..." oninput="filterProducts()">
+            </div>
+        </div>
+        <!-- Indkøbskurv placeret udenfor containeren -->
+        <div class="cart">
+            <a href="javascript:void(0);" class="cart-icon" onclick="openCartOverlay()">
+                <img src="Kurv.png" alt="Indkøbskurv" class="cart-icon">
+                <span id="cart-count">0</span> <!-- Tæller for varer i kurven -->
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="product-type">
+                <h2>Ugens Tilbud <a href="sale.html">Vis alle</a></h2>
+                <div class="products" id="sale-products">
+                    
+        <div id="product8" class="product" onclick="openOverlay('product8')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/100741/image/1618416423/600.jpg" alt="DANSK HONNING">
+            <h3>DANSK HONNING</h3>
+            <p class="price">32.95 DKK</p>
+            <p>Honningbien dansk honning</p>
+            <p class="brand">HONNINGBIEN</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product8')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product14" class="product" onclick="openOverlay('product14')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/101196/image/1635844206/600.jpg" alt="SORTE BØNNER">
+            <h3>SORTE BØNNER</h3>
+            <p class="price">5.95 DKK</p>
+            <p>REMA 1000 Øko Sorte bønner</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product14')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product52" class="product" onclick="openOverlay('product52')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/100042/image/1618416364/600.jpg" alt="KIKÆRTER">
+            <h3>KIKÆRTER</h3>
+            <p class="price">7.50 DKK</p>
+            <p>REMA 1000 Øko. Kikærter</p>
+            <p class="brand">REMA 1000 ØKOLOGISKE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product52')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product56" class="product" onclick="openOverlay('product56')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/100098/image/1618416369/600.jpg" alt="KIDNEYBØNNER">
+            <h3>KIDNEYBØNNER</h3>
+            <p class="price">7.50 DKK</p>
+            <p>REMA 1000 Øko. Kidneybønner</p>
+            <p class="brand">REMA 1000 ØKOLOGISKE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product56')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product75" class="product" onclick="openOverlay('product75')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/102500/image/1618416484/600.jpg" alt="LASAGNEBLANDING">
+            <h3>LASAGNEBLANDING</h3>
+            <p class="price">13.95 DKK</p>
+            <p>REMA 1000 lasagneblanding</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product75')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product119" class="product" onclick="openOverlay('product119')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/102501/image/1618416484/600.jpg" alt="LASAGNETTEBLANDING">
+            <h3>LASAGNETTEBLANDING</h3>
+            <p class="price">13.95 DKK</p>
+            <p>REMA 1000 lasagnette-blanding</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product119')">Tilføj til kurv</div>
+        </div>
+        
+                </div>
+            </section>
+            
+    <div class="product-type">
+        <h2>Brød & Bavinchi <a href="Brød_&_Bavinchi.html">Vis alle</a></h2>
+        <div class="products">
+            
+        <div id="product1554" class="product" onclick="openOverlay('product1554')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/360565/image/1648461865/600.jpg" alt="HINDBÆRSNITTER">
+            <h3>HINDBÆRSNITTER</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Hindbærsnitter 4 stk. indpk.</p>
+            <p class="brand">BAVINCHI, 4 STK.</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1554')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1555" class="product" onclick="openOverlay('product1555')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/360577/image/1648461568/600.jpg" alt="MAKRONSNITTER">
+            <h3>MAKRONSNITTER</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Makronsnitter 4 stk. indpk.</p>
+            <p class="brand">BAVINCHI, 4 STK.</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1555')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1556" class="product" onclick="openOverlay('product1556')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/360624/image/1618576030/600.jpg" alt="TRØFLER">
+            <h3>TRØFLER</h3>
+            <p class="price">30.00 DKK</p>
+            <p>Trøfler 4 stk. indpk.</p>
+            <p class="brand">BAVINCHI, 4 STK.</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1556')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1557" class="product" onclick="openOverlay('product1557')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/360691/image/1729927234/600.jpg" alt="SALT OG PEBER STYKKE">
+            <h3>SALT OG PEBER STYKKE</h3>
+            <p class="price">3.75 DKK</p>
+            <p>Salt og peber stykke</p>
+            <p class="brand">BAVINCHI</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1557')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1558" class="product" onclick="openOverlay('product1558')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/360700/image/1633612993/600.jpg" alt="SOLSIKKERUGBRØD">
+            <h3>SOLSIKKERUGBRØD</h3>
+            <p class="price">26.00 DKK</p>
+            <p>Solsikkerugbrød uindpk.</p>
+            <p class="brand">BAVINCHI</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1558')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1559" class="product" onclick="openOverlay('product1559')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/360715/image/1618576032/600.jpg" alt="MORMORBRØD">
+            <h3>MORMORBRØD</h3>
+            <p class="price">25.00 DKK</p>
+            <p>Mormorbrød uindpk.</p>
+            <p class="brand">BAVINCHI</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1559')">Tilføj til kurv</div>
+        </div>
+        
+        </div>
+    </div>
+    
+    <div class="product-type">
+        <h2>Drikkevarer <a href="Drikkevarer.html">Vis alle</a></h2>
+        <div class="products">
+            
+        <div id="product4" class="product" onclick="openOverlay('product4')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/10068/image/1618229729/600.jpg" alt="ICETEA FERSKEN">
+            <h3>ICETEA FERSKEN</h3>
+            <p class="price">5.00 DKK</p>
+            <p>REMA 1000 icetea ferskensmag</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product4')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product12" class="product" onclick="openOverlay('product12')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/10116/image/1623408516/600.jpg" alt="SMOOTHIE">
+            <h3>SMOOTHIE</h3>
+            <p class="price">9.95 DKK</p>
+            <p>REMA 1000 smoothie mango/banan</p>
+            <p class="brand">MANGO & BANAN</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product12')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product18" class="product" onclick="openOverlay('product18')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/101301/image/1667478853/600.jpg" alt="SOJADRIK/VANILJE">
+            <h3>SOJADRIK/VANILJE</h3>
+            <p class="price">10.75 DKK</p>
+            <p>Plantekøkkenet sojadrik/vanil</p>
+            <p class="brand">PLANTEKØKKENET</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product18')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product31" class="product" onclick="openOverlay('product31')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/10506/image/1618229743/600.jpg" alt="ÆBLEJUICE">
+            <h3>ÆBLEJUICE</h3>
+            <p class="price">9.40 DKK</p>
+            <p>REMA 1000 æblejuice</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product31')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product42" class="product" onclick="openOverlay('product42')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/11300/image/1673429756/600.jpg" alt="ØRSKOV FRUGT">
+            <h3>ØRSKOV FRUGT</h3>
+            <p class="price">20.00 DKK</p>
+            <p>Ørskov æblemost med pæresaft</p>
+            <p class="brand">ÆBLEMOST M/PÆRESAFT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product42')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product45" class="product" onclick="openOverlay('product45')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/11382/image/1720453162/600.jpg" alt="APPELSIN">
+            <h3>APPELSIN</h3>
+            <p class="price">16.95 DKK</p>
+            <p>Appelsin nektar</p>
+            <p class="brand">NEKTAR</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product45')">Tilføj til kurv</div>
+        </div>
+        
+        </div>
+    </div>
+    
+    <div class="product-type">
+        <h2>Frost <a href="Frost.html">Vis alle</a></h2>
+        <div class="products">
+            
+        <div id="product1210" class="product" onclick="openOverlay('product1210')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/250067/image/1672222509/600.jpg" alt="SMOKEY BBQ WINGS">
+            <h3>SMOKEY BBQ WINGS</h3>
+            <p class="price">37.95 DKK</p>
+            <p>REMA 1000 Smokey bbq wings</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1210')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1211" class="product" onclick="openOverlay('product1211')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/250098/image/1698758395/600.jpg" alt="KYLLINGESTRIMLER">
+            <h3>KYLLINGESTRIMLER</h3>
+            <p class="price">34.95 DKK</p>
+            <p>REMA 1000 kyllingestrimler</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1211')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1212" class="product" onclick="openOverlay('product1212')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/250297/image/1618572399/600.jpg" alt="KYLLINGEDIPPERS M BBQ">
+            <h3>KYLLINGEDIPPERS M BBQ</h3>
+            <p class="price">24.95 DKK</p>
+            <p>REMA 1000 Kyllingedippers m BBQ</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1212')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1213" class="product" onclick="openOverlay('product1213')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/250300/image/1683894590/600.jpg" alt="KYLLINGESCHNITZLER">
+            <h3>KYLLINGESCHNITZLER</h3>
+            <p class="price">19.95 DKK</p>
+            <p>REMA 1000 kyllingeschnitzler</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1213')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1214" class="product" onclick="openOverlay('product1214')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/250302/image/1618572399/600.jpg" alt="KYLLING CORDON BLEU">
+            <h3>KYLLING CORDON BLEU</h3>
+            <p class="price">29.95 DKK</p>
+            <p>REMA 1000 Kyllinge Cordon Bleu</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1214')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1215" class="product" onclick="openOverlay('product1215')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/250312/image/1698758396/600.jpg" alt="KYLLINGENUGGETS">
+            <h3>KYLLINGENUGGETS</h3>
+            <p class="price">39.95 DKK</p>
+            <p>REMA 1000 Kyllinge nuggets</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1215')">Tilføj til kurv</div>
+        </div>
+        
+        </div>
+    </div>
+    
+    <div class="product-type">
+        <h2>Frugt & grønt <a href="Frugt_&_grønt.html">Vis alle</a></h2>
+        <div class="products">
+            
+        <div id="product704" class="product" onclick="openOverlay('product704')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/172344/image/1618498300/600.jpg" alt="FRUGT OG GRØNT POSE">
+            <h3>FRUGT OG GRØNT POSE</h3>
+            <p class="price">3.00 DKK</p>
+            <p>REMA 1000 frugt og grønt pose</p>
+            <p class="brand">GENANVENDELIG</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product704')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1441" class="product" onclick="openOverlay('product1441')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/304529/image/1618572710/600.jpg" alt="CLEMENTIN SYDAFRIKA">
+            <h3>CLEMENTIN SYDAFRIKA</h3>
+            <p class="price">2.50 DKK</p>
+            <p>Clementiner, ZA</p>
+            <p class="brand">FRUGTEN ER OVERF.BEH. KL.2</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1441')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1442" class="product" onclick="openOverlay('product1442')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/304534/image/1618572710/600.jpg" alt="BLOMMER">
+            <h3>BLOMMER</h3>
+            <p class="price">2.50 DKK</p>
+            <p>Blommer, IT.</p>
+            <p class="brand">ITALIEN KL.1</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1442')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1443" class="product" onclick="openOverlay('product1443')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/304539/image/1727858455/600.jpg" alt="ØKO. GRAPEFRUGT">
+            <h3>ØKO. GRAPEFRUGT</h3>
+            <p class="price">7.00 DKK</p>
+            <p>Grapefrugt ØKO, ES.</p>
+            <p class="brand">SPANIEN KL.1</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1443')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1444" class="product" onclick="openOverlay('product1444')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/304560/image/1618572713/600.jpg" alt="CITRON, SPANIEN">
+            <h3>CITRON, SPANIEN</h3>
+            <p class="price">4.00 DKK</p>
+            <p>Citroner, ES</p>
+            <p class="brand">FRUGTEN ER OVERFLADEBEH. KL.1</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1444')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1445" class="product" onclick="openOverlay('product1445')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/304585/image/1618572714/600.jpg" alt="ØKO. CITRONER">
+            <h3>ØKO. CITRONER</h3>
+            <p class="price">7.50 DKK</p>
+            <p>Citroner i net ØKO</p>
+            <p class="brand">LAND/KL.: SE VAREN</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1445')">Tilføj til kurv</div>
+        </div>
+        
+        </div>
+    </div>
+    
+    <div class="product-type">
+        <h2>Kolonial <a href="Kolonial.html">Vis alle</a></h2>
+        <div class="products">
+            
+        <div id="product0" class="product" onclick="openOverlay('product0')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/100597/image/1618416409/600.jpg" alt="GRØN PESTO">
+            <h3>GRØN PESTO</h3>
+            <p class="price">8.90 DKK</p>
+            <p>REMA 1000 Øko grøn pesto</p>
+            <p class="brand">REMA 1000 ØKOLOGISKE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product0')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1" class="product" onclick="openOverlay('product1')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/100598/image/1618416409/600.jpg" alt="BROMBÆRMARMELADE">
+            <h3>BROMBÆRMARMELADE</h3>
+            <p class="price">15.95 DKK</p>
+            <p>REMA 1000 Brombær marmelade</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2" class="product" onclick="openOverlay('product2')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/100601/image/1618416410/600.jpg" alt="FRUGT BAMSER">
+            <h3>FRUGT BAMSER</h3>
+            <p class="price">10.00 DKK</p>
+            <p>RK Øko Frugtbamser, æble/jordb</p>
+            <p class="brand">ÆBLE & JORDBÆR</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product3" class="product" onclick="openOverlay('product3')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/100602/image/1618416410/600.jpg" alt="ABRIKOSMARMELADE">
+            <h3>ABRIKOSMARMELADE</h3>
+            <p class="price">11.75 DKK</p>
+            <p>REMA 1000 Abrikosmarmelade</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product3')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product5" class="product" onclick="openOverlay('product5')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/100703/image/1630591935/600.jpg" alt="FERSKNER I SIRUP">
+            <h3>FERSKNER I SIRUP</h3>
+            <p class="price">16.50 DKK</p>
+            <p>REMA1000 ferskner i sukkerlage</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product5')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product6" class="product" onclick="openOverlay('product6')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/100707/image/1618416420/600.jpg" alt="HVERDAGSHONNING">
+            <h3>HVERDAGSHONNING</h3>
+            <p class="price">21.95 DKK</p>
+            <p>Jakobsens Hverdagshonning</p>
+            <p class="brand">JAKOBSENS</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product6')">Tilføj til kurv</div>
+        </div>
+        
+        </div>
+    </div>
+    
+    <div class="product-type">
+        <h2>Kød, fisk & fjerkræ <a href="Kød,_fisk_&_fjerkræ.html">Vis alle</a></h2>
+        <div class="products">
+            
+        <div id="product1591" class="product" onclick="openOverlay('product1591')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/400167/image/1726058648/600.jpg" alt="HK. OKSEKØD 4-7%">
+            <h3>HK. OKSEKØD 4-7%</h3>
+            <p class="price">40.95 DKK</p>
+            <p>HK. Dansk Oksekød 4-7%</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1591')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1592" class="product" onclick="openOverlay('product1592')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/400171/image/1726058659/600.jpg" alt="HK. OKSEKØD 8-12%">
+            <h3>HK. OKSEKØD 8-12%</h3>
+            <p class="price">37.50 DKK</p>
+            <p>Hk. Dansk Oksekød 8-12%</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1592')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1593" class="product" onclick="openOverlay('product1593')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/400172/image/1726058670/600.jpg" alt="HK. OKSEKØD 8-12%">
+            <h3>HK. OKSEKØD 8-12%</h3>
+            <p class="price">75.00 DKK</p>
+            <p>Hk.Dansk Oksekød 8-12% 800g</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1593')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1594" class="product" onclick="openOverlay('product1594')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/400176/image/1726058682/600.jpg" alt="HK. OKSEKØD 15-18%">
+            <h3>HK. OKSEKØD 15-18%</h3>
+            <p class="price">35.95 DKK</p>
+            <p>HK. Dansk Oksekød 15-18%</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1594')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1595" class="product" onclick="openOverlay('product1595')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/400179/image/1668776619/600.jpg" alt="HK. OKSEKØD 4-7%">
+            <h3>HK. OKSEKØD 4-7%</h3>
+            <p class="price">49.95 DKK</p>
+            <p>Friland Øko hk. okse 4-7%</p>
+            <p class="brand">FRILAND, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1595')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1596" class="product" onclick="openOverlay('product1596')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/400180/image/1695373566/600.jpg" alt="HK. OKSE 8-12%">
+            <h3>HK. OKSE 8-12%</h3>
+            <p class="price">46.95 DKK</p>
+            <p>Friland Øko hk. okse 8-12%</p>
+            <p class="brand">FRILAND, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1596')">Tilføj til kurv</div>
+        </div>
+        
+        </div>
+    </div>
+    
+    <div class="product-type">
+        <h2>Køl <a href="Køl.html">Vis alle</a></h2>
+        <div class="products">
+            
+        <div id="product1149" class="product" onclick="openOverlay('product1149')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/232124/image/1675698253/600.jpg" alt="GREVEFEDT">
+            <h3>GREVEFEDT</h3>
+            <p class="price">16.95 DKK</p>
+            <p>Friland Grevefedt</p>
+            <p class="brand">PETER & LENE'S FRILANDSGRIS</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1149')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1151" class="product" onclick="openOverlay('product1151')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/232126/image/1618570610/600.jpg" alt="FEDT MED LØG">
+            <h3>FEDT MED LØG</h3>
+            <p class="price">17.95 DKK</p>
+            <p>OK fedt med løg</p>
+            <p class="brand">OK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1151')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1152" class="product" onclick="openOverlay('product1152')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/232127/image/1618570611/600.jpg" alt="FEDTEGREVER">
+            <h3>FEDTEGREVER</h3>
+            <p class="price">14.95 DKK</p>
+            <p>Fedtegrever, Bedstemors</p>
+            <p class="brand">BEDSTEMORS</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1152')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1316" class="product" onclick="openOverlay('product1316')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/30105/image/1643365863/600.jpg" alt="KARRY SILD">
+            <h3>KARRY SILD</h3>
+            <p class="price">25.95 DKK</p>
+            <p>Fiskemandens karry sild</p>
+            <p class="brand">FISKEMANDENS</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1316')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1318" class="product" onclick="openOverlay('product1318')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/30226/image/1721217549/600.jpg" alt="MARINEREDE SILD">
+            <h3>MARINEREDE SILD</h3>
+            <p class="price">25.95 DKK</p>
+            <p>Fiskemandens marinerede sild i fileter</p>
+            <p class="brand">FISKEMANDENS</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1318')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1319" class="product" onclick="openOverlay('product1319')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/30320/image/1666282777/600.jpg" alt="STEGTE JULESILD">
+            <h3>STEGTE JULESILD</h3>
+            <p class="price">24.95 DKK</p>
+            <p>Fiskemandens stegte julesild med appelsin</p>
+            <p class="brand">FISKEMANDENS, MED APPELSIN</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1319')">Tilføj til kurv</div>
+        </div>
+        
+        </div>
+    </div>
+    
+    <div class="product-type">
+        <h2>Mejeri <a href="Mejeri.html">Vis alle</a></h2>
+        <div class="products">
+            
+        <div id="product234" class="product" onclick="openOverlay('product234')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/11240/image/1650634906/600.jpg" alt="KAKAOMÆLK">
+            <h3>KAKAOMÆLK</h3>
+            <p class="price">3.52 DKK</p>
+            <p>REMA 1000 kakaomælk</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product234')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product486" class="product" onclick="openOverlay('product486')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/11500/image/1677160902/600.jpg" alt="KAKAOMÆLK">
+            <h3>KAKAOMÆLK</h3>
+            <p class="price">11.00 DKK</p>
+            <p>REMA 1000 kakao mælk</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product486')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product534" class="product" onclick="openOverlay('product534')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/11002/image/1665039029/600.jpg" alt="ARLA KAKAO">
+            <h3>ARLA KAKAO</h3>
+            <p class="price">17.50 DKK</p>
+            <p>Arla kakao, øko. laktosefri</p>
+            <p class="brand">LAKTOSEFRI</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product534')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product761" class="product" onclick="openOverlay('product761')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20020/image/1705507069/600.jpg" alt="MINIMÆLK 0,4%">
+            <h3>MINIMÆLK 0,4%</h3>
+            <p class="price">14.25 DKK</p>
+            <p>GRAM SLOT minimælk 0,4%, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product761')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product768" class="product" onclick="openOverlay('product768')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20025/image/1705503910/600.jpg" alt="LETMÆLK 1,5%">
+            <h3>LETMÆLK 1,5%</h3>
+            <p class="price">14.75 DKK</p>
+            <p>GRAM SLOT letmælk 1,5%, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product768')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product778" class="product" onclick="openOverlay('product778')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20100/image/1686129707/600.jpg" alt="SØDMÆLK 3,5%">
+            <h3>SØDMÆLK 3,5%</h3>
+            <p class="price">13.75 DKK</p>
+            <p>Arla 24 timer sødmælk 3,5%</p>
+            <p class="brand">ARLA 24 TIMER</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product778')">Tilføj til kurv</div>
+        </div>
+        
+        </div>
+    </div>
+    
+    <div class="product-type">
+        <h2>Nemt & hurtigt <a href="Nemt_&_hurtigt.html">Vis alle</a></h2>
+        <div class="products">
+            
+        <div id="product1023" class="product" onclick="openOverlay('product1023')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23912/image/1717060779/600.jpg" alt="INGEFÆRSHOT">
+            <h3>INGEFÆRSHOT</h3>
+            <p class="price">21.95 DKK</p>
+            <p>Frankly Juice øko. ingefærshot</p>
+            <p class="brand">FRANKLY, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1023')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1024" class="product" onclick="openOverlay('product1024')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23925/image/1675783257/600.jpg" alt="INGEFÆRSHOT">
+            <h3>INGEFÆRSHOT</h3>
+            <p class="price">10.00 DKK</p>
+            <p>Frankly ingefærshot, øko.</p>
+            <p class="brand">FRANKLY, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1024')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1157" class="product" onclick="openOverlay('product1157')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23434/image/1694611229/600.jpg" alt="ELLA-SARA SMOOTHIE">
+            <h3>ELLA-SARA SMOOTHIE</h3>
+            <p class="price">10.00 DKK</p>
+            <p>Ella-Sara - Smoothie Mango, passion</p>
+            <p class="brand">MANGO,PASSION</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1157')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1158" class="product" onclick="openOverlay('product1158')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23435/image/1693559850/600.jpg" alt="ELLA-SARA SMOOTHIE">
+            <h3>ELLA-SARA SMOOTHIE</h3>
+            <p class="price">10.00 DKK</p>
+            <p>Ella-Sara -  Smoothie jordbær, banan</p>
+            <p class="brand">JORDBÆR,BANAN</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1158')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1806" class="product" onclick="openOverlay('product1806')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411073/image/1712917214/600.jpg" alt="FLØDEKARTOFLER">
+            <h3>FLØDEKARTOFLER</h3>
+            <p class="price">24.95 DKK</p>
+            <p>PEKA flødekartofler med rød peber</p>
+            <p class="brand">PEKA, MED RØD PEBER</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1806')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1828" class="product" onclick="openOverlay('product1828')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/411386/image/1668160872/600.jpg" alt="MÅLTIDSSALAT">
+            <h3>MÅLTIDSSALAT</h3>
+            <p class="price">45.00 DKK</p>
+            <p>Måltidssalat m/grillet kylling, Ready to go</p>
+            <p class="brand">M/GRILLET KYLLING, GRØNTSAGER, PASTA, READY TO GO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1828')">Tilføj til kurv</div>
+        </div>
+        
+        </div>
+    </div>
+    
+    <div class="product-type">
+        <h2>Ost m.v. <a href="Ost_m.v..html">Vis alle</a></h2>
+        <div class="products">
+            
+        <div id="product1431" class="product" onclick="openOverlay('product1431')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/28811/image/1695895662/600.jpg" alt="HYTTEOST 4%">
+            <h3>HYTTEOST 4%</h3>
+            <p class="price">21.95 DKK</p>
+            <p>Mammen hytteost 4%</p>
+            <p class="brand">MAMMEN</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1431')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1432" class="product" onclick="openOverlay('product1432')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/28826/image/1694426271/600.jpg" alt="HYTTEOST 4,0%">
+            <h3>HYTTEOST 4,0%</h3>
+            <p class="price">13.95 DKK</p>
+            <p>Mammen hytteost 4%, økologisk</p>
+            <p class="brand">MAMMEN, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1432')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1433" class="product" onclick="openOverlay('product1433')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/28827/image/1667558972/600.jpg" alt="HYTTEOST 1.5%">
+            <h3>HYTTEOST 1.5%</h3>
+            <p class="price">15.50 DKK</p>
+            <p>Cheasy hytteost 1.5%</p>
+            <p class="brand">CHEASY</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1433')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1434" class="product" onclick="openOverlay('product1434')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/28835/image/1666183245/600.jpg" alt="HYTTEOST 4%">
+            <h3>HYTTEOST 4%</h3>
+            <p class="price">16.95 DKK</p>
+            <p>Arla hytteost 4%, lactofree</p>
+            <p class="brand">ARLA, LACTOFREE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1434')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1515" class="product" onclick="openOverlay('product1515')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24197/image/1618232696/600.jpg" alt="MASCARPONE">
+            <h3>MASCARPONE</h3>
+            <p class="price">20.95 DKK</p>
+            <p>Ambrosi mascarpone</p>
+            <p class="brand">AMBROSI</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1515')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2243" class="product" onclick="openOverlay('product2243')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/450124/image/1716293515/600.jpg" alt="CHILI">
+            <h3>CHILI</h3>
+            <p class="price">27.95 DKK</p>
+            <p>Castello chili</p>
+            <p class="brand">CASTELLO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2243')">Tilføj til kurv</div>
+        </div>
+        
+        </div>
+    </div>
+    
+    <div class="product-type">
+        <h2>Slik <a href="Slik.html">Vis alle</a></h2>
+        <div class="products">
+            
+        <div id="product3169" class="product" onclick="openOverlay('product3169')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/80476/image/1680000939/600.jpg" alt="DENTAL PEPPERMINT">
+            <h3>DENTAL PEPPERMINT</h3>
+            <p class="price">6.00 DKK</p>
+            <p>REMA 1000 dental gum peppermin</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product3169')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product3170" class="product" onclick="openOverlay('product3170')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/80477/image/1683106719/600.jpg" alt="DENTAL SPEARMINT">
+            <h3>DENTAL SPEARMINT</h3>
+            <p class="price">6.00 DKK</p>
+            <p>REMA 1000 dental spearmint gum</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product3170')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product3171" class="product" onclick="openOverlay('product3171')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/80498/image/1618301968/600.jpg" alt="MARCIPANBRØD">
+            <h3>MARCIPANBRØD</h3>
+            <p class="price">12.95 DKK</p>
+            <p>REMA 1000 marcipanbrød ft</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product3171')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product3213" class="product" onclick="openOverlay('product3213')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/80147/image/1673857196/600.jpg" alt="KARAMELLER">
+            <h3>KARAMELLER</h3>
+            <p class="price">22.95 DKK</p>
+            <p>REMA 1000 engelske karameller</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product3213')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product3214" class="product" onclick="openOverlay('product3214')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/80161/image/1656670803/600.jpg" alt="WEEKENDMIX">
+            <h3>WEEKENDMIX</h3>
+            <p class="price">24.95 DKK</p>
+            <p>REMA 1000 weekendmix</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product3214')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product3215" class="product" onclick="openOverlay('product3215')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/80176/image/1679416267/600.jpg" alt="FLØDEBOLLER">
+            <h3>FLØDEBOLLER</h3>
+            <p class="price">20.95 DKK</p>
+            <p>REMA 1000 flødeboller</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product3215')">Tilføj til kurv</div>
+        </div>
+        
+        </div>
+    </div>
+    
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Spotter.</p>
+        </div>
+    </footer>
+
+    <!-- Overlay for produktinformation -->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span class="close" onclick="closeOverlay()">&times;</span>
+            <img id="overlay-image" src="" alt="Produktbillede">
+            <div class="overlay-text">
+                <h3 id="overlay-title">Produktnavn</h3>
+                <p id="overlay-description">Produktbeskrivelse</p>
+                <p id="overlay-brand">Mærke: <span id="overlay-brand-name"></span></p>
+                <p id="overlay-price">Pris: <span id="overlay-price-value"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay for indkøbskurv -->
+    <div id="cart-overlay" class="overlay">
+        <div class="overlay-content">
+            <span class="close" onclick="closeCartOverlay()">&times;</span>
+            <h2>Indkøbskurv</h2>
+            <div id="cart-items">
+                <!-- Dynamiske produkter i kurven -->
+                <div class="cart-item">
+                    <img src="images/default_image.png" alt="Produktbillede" class="cart-item-img">
+                    <div class="cart-item-info">
+                        <h3 class="cart-item-title">Produktnavn</h3>
+                        <p class="cart-item-price">Pris: 99,99 kr</p>
+                    </div>
+                </div>
+            </div>
+            <button id="checkout-button">Gå til kassen</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1877 @@
+
+    <!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejeri</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mejeri</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="sale.html">Ugens Tilbud</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="products">
+                
+        <div id="product234" class="product" onclick="openOverlay('product234')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/11240/image/1650634906/600.jpg" alt="KAKAOMÆLK">
+            <h3>KAKAOMÆLK</h3>
+            <p class="price">3.52 DKK</p>
+            <p>REMA 1000 kakaomælk</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product234')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product486" class="product" onclick="openOverlay('product486')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/11500/image/1677160902/600.jpg" alt="KAKAOMÆLK">
+            <h3>KAKAOMÆLK</h3>
+            <p class="price">11.00 DKK</p>
+            <p>REMA 1000 kakao mælk</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product486')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product534" class="product" onclick="openOverlay('product534')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/11002/image/1665039029/600.jpg" alt="ARLA KAKAO">
+            <h3>ARLA KAKAO</h3>
+            <p class="price">17.50 DKK</p>
+            <p>Arla kakao, øko. laktosefri</p>
+            <p class="brand">LAKTOSEFRI</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product534')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product761" class="product" onclick="openOverlay('product761')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20020/image/1705507069/600.jpg" alt="MINIMÆLK 0,4%">
+            <h3>MINIMÆLK 0,4%</h3>
+            <p class="price">14.25 DKK</p>
+            <p>GRAM SLOT minimælk 0,4%, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product761')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product768" class="product" onclick="openOverlay('product768')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20025/image/1705503910/600.jpg" alt="LETMÆLK 1,5%">
+            <h3>LETMÆLK 1,5%</h3>
+            <p class="price">14.75 DKK</p>
+            <p>GRAM SLOT letmælk 1,5%, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product768')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product778" class="product" onclick="openOverlay('product778')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20100/image/1686129707/600.jpg" alt="SØDMÆLK 3,5%">
+            <h3>SØDMÆLK 3,5%</h3>
+            <p class="price">13.75 DKK</p>
+            <p>Arla 24 timer sødmælk 3,5%</p>
+            <p class="brand">ARLA 24 TIMER</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product778')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product825" class="product" onclick="openOverlay('product825')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20233/image/1655809322/600.jpg" alt="PROTEIN CHOCO">
+            <h3>PROTEIN CHOCO</h3>
+            <p class="price">17.50 DKK</p>
+            <p>Arla protein chokolade drik laktosefri</p>
+            <p class="brand">ARLA, CHOKOLADE SMAG</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product825')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product851" class="product" onclick="openOverlay('product851')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20026/image/1701177636/600.jpg" alt="SKUMMETMÆLK 0,1%">
+            <h3>SKUMMETMÆLK 0,1%</h3>
+            <p class="price">14.25 DKK</p>
+            <p>GRAM SLOT skummetmælk 0,1%, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product851')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product864" class="product" onclick="openOverlay('product864')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20131/image/1701177727/600.jpg" alt="PISKEFLØDE 38%">
+            <h3>PISKEFLØDE 38%</h3>
+            <p class="price">18.95 DKK</p>
+            <p>GRAM SLOT piskefløde 38%, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product864')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product865" class="product" onclick="openOverlay('product865')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20152/image/1676632418/600.jpg" alt="MADFLØDE 13%">
+            <h3>MADFLØDE 13%</h3>
+            <p class="price">15.50 DKK</p>
+            <p>Arla madlavningsfløde 13%, lactofree</p>
+            <p class="brand">ARLA, LACTOFREE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product865')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product866" class="product" onclick="openOverlay('product866')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20154/image/1729167550/600.jpg" alt="PISKBAR">
+            <h3>PISKBAR</h3>
+            <p class="price">14.35 DKK</p>
+            <p>Alpro soya whipping/piskbar</p>
+            <p class="brand">ALPRO SOYA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product866')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product869" class="product" onclick="openOverlay('product869')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20231/image/1677664276/600.jpg" alt="BLÅBÆR/VANILJE">
+            <h3>BLÅBÆR/VANILJE</h3>
+            <p class="price">22.95 DKK</p>
+            <p>Cheasy protein yoghurt blåbær/vanilje 0,1%</p>
+            <p class="brand">CHEASY, PROTEIN YOGHURT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product869')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product870" class="product" onclick="openOverlay('product870')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20803/image/1713196487/600.jpg" alt="HAVREDRIK">
+            <h3>HAVREDRIK</h3>
+            <p class="price">16.30 DKK</p>
+            <p>Naturli' havredrik økologisk</p>
+            <p class="brand">NATURLI', ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product870')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product871" class="product" onclick="openOverlay('product871')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20804/image/1713273050/600.jpg" alt="MANDELDRIK">
+            <h3>MANDELDRIK</h3>
+            <p class="price">17.95 DKK</p>
+            <p>Naturli' mandeldrik økologisk</p>
+            <p class="brand">NATURLI', ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product871')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product872" class="product" onclick="openOverlay('product872')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20805/image/1713273452/600.jpg" alt="HAVRE KAKAO DRIK">
+            <h3>HAVRE KAKAO DRIK</h3>
+            <p class="price">17.95 DKK</p>
+            <p>Naturli' havrekakao drik, økologisk</p>
+            <p class="brand">NATURLI', ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product872')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product873" class="product" onclick="openOverlay('product873')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20863/image/1684335227/600.jpg" alt="DRIKKESKYR">
+            <h3>DRIKKESKYR</h3>
+            <p class="price">14.95 DKK</p>
+            <p>Stay Strong PRO drikkeskyr pære- og vanilje</p>
+            <p class="brand">STAY STRONG PRO, PÆRE & VANILJE,</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product873')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product904" class="product" onclick="openOverlay('product904')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20068/image/1715764482/600.jpg" alt="APPELSIN JUICE">
+            <h3>APPELSIN JUICE</h3>
+            <p class="price">34.95 DKK</p>
+            <p>Innocent Appelsin Juice med frugtkød</p>
+            <p class="brand">INNOCENT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product904')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product913" class="product" onclick="openOverlay('product913')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20396/image/1675698140/600.jpg" alt="CREAMY SKYR">
+            <h3>CREAMY SKYR</h3>
+            <p class="price">9.95 DKK</p>
+            <p>Stay Strong creamy skyr jordbær & granola</p>
+            <p class="brand">STAY STRONG, JORDBÆR-/LIMESMAG & GRANOLA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product913')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product917" class="product" onclick="openOverlay('product917')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20426/image/1695980052/600.jpg" alt="KIRSEBÆR YOGHURT 1,3%">
+            <h3>KIRSEBÆR YOGHURT 1,3%</h3>
+            <p class="price">20.95 DKK</p>
+            <p>Yoggi kirsebær yoghurt 1,3%</p>
+            <p class="brand">YOGGI</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product917')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product918" class="product" onclick="openOverlay('product918')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20494/image/1714060668/600.jpg" alt="LETMÆLK 1,5% FEDT">
+            <h3>LETMÆLK 1,5% FEDT</h3>
+            <p class="price">11.75 DKK</p>
+            <p>REMA 1000 letmælk 1,5% fedt</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product918')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product919" class="product" onclick="openOverlay('product919')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20500/image/1686129856/600.jpg" alt="LETMÆLK 1,5%">
+            <h3>LETMÆLK 1,5%</h3>
+            <p class="price">13.95 DKK</p>
+            <p>Arla 24 timer letmælk 1,5%</p>
+            <p class="brand">ARLA 24 TIMER</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product919')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product920" class="product" onclick="openOverlay('product920')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20758/image/1665038726/600.jpg" alt="LETMÆLK">
+            <h3>LETMÆLK</h3>
+            <p class="price">3.75 DKK</p>
+            <p>Arla letmælk</p>
+            <p class="brand">ARLA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product920')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product921" class="product" onclick="openOverlay('product921')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20794/image/1706085787/600.jpg" alt="BARISTA HAVREDRIK">
+            <h3>BARISTA HAVREDRIK</h3>
+            <p class="price">16.95 DKK</p>
+            <p>Arla Jörd barista havredrik UHT</p>
+            <p class="brand">ARLA JÖRD</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product921')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product922" class="product" onclick="openOverlay('product922')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20797/image/1706085849/600.jpg" alt="SYRNET HAVRE JORDBÆR">
+            <h3>SYRNET HAVRE JORDBÆR</h3>
+            <p class="price">17.50 DKK</p>
+            <p>Arla Jörd jordbær syrnet havre</p>
+            <p class="brand">ARLA JÖRD</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product922')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product953" class="product" onclick="openOverlay('product953')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20364/image/1717514366/600.jpg" alt="PROTEIN DRIK">
+            <h3>PROTEIN DRIK</h3>
+            <p class="price">17.50 DKK</p>
+            <p>Arla protein drik vanilje laktosefri</p>
+            <p class="brand">ARLA, VANILJE SMAG</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product953')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product954" class="product" onclick="openOverlay('product954')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20366/image/1713439759/600.jpg" alt="TRIPLESHOT ESPRESSO">
+            <h3>TRIPLESHOT ESPRESSO</h3>
+            <p class="price">20.50 DKK</p>
+            <p>Starbucks Tripleshot Espresso</p>
+            <p class="brand">STARBUCKS</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product954')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product955" class="product" onclick="openOverlay('product955')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20369/image/1632149535/600.jpg" alt="FRAICHE 9%">
+            <h3>FRAICHE 9%</h3>
+            <p class="price">13.95 DKK</p>
+            <p>GRAM SLOT fraiche 9%, økologisk</p>
+            <p class="brand">GRAM SLOT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product955')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product956" class="product" onclick="openOverlay('product956')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20370/image/1630925586/600.jpg" alt="CREME FRAICHE 38%">
+            <h3>CREME FRAICHE 38%</h3>
+            <p class="price">15.95 DKK</p>
+            <p>GRAM SLOT creme friache 38%, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product956')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product957" class="product" onclick="openOverlay('product957')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20380/image/1693566347/600.jpg" alt="HINDBÆR DRIKKEYOGHURT">
+            <h3>HINDBÆR DRIKKEYOGHURT</h3>
+            <p class="price">14.50 DKK</p>
+            <p>GRAM SLOT drikkeyoghurt hindbær, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product957')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product958" class="product" onclick="openOverlay('product958')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20381/image/1693566377/600.jpg" alt="KAKAOMÆLK">
+            <h3>KAKAOMÆLK</h3>
+            <p class="price">11.25 DKK</p>
+            <p>GRAM SLOT kakaomælk, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product958')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product959" class="product" onclick="openOverlay('product959')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20385/image/1723462896/600.jpg" alt="SKYR VANILJE">
+            <h3>SKYR VANILJE</h3>
+            <p class="price">19.95 DKK</p>
+            <p>GRAM SLOT skyr vanilje, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product959')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product960" class="product" onclick="openOverlay('product960')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20386/image/1723462930/600.jpg" alt="SKYR HINDBÆR">
+            <h3>SKYR HINDBÆR</h3>
+            <p class="price">19.95 DKK</p>
+            <p>GRAM SLOT skyr hindbær, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product960')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product961" class="product" onclick="openOverlay('product961')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20387/image/1723462967/600.jpg" alt="SKYR NATUREL">
+            <h3>SKYR NATUREL</h3>
+            <p class="price">17.95 DKK</p>
+            <p>GRAM SLOT skyr naturel, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product961')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product976" class="product" onclick="openOverlay('product976')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20248/image/1719389968/600.jpg" alt="LEMON-LIME">
+            <h3>LEMON-LIME</h3>
+            <p class="price">21.55 DKK</p>
+            <p>Alpro soya lemon-lime</p>
+            <p class="brand">ALPRO SOYA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product976')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product977" class="product" onclick="openOverlay('product977')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20252/image/1664273974/600.jpg" alt="SKOVBÆR">
+            <h3>SKOVBÆR</h3>
+            <p class="price">32.95 DKK</p>
+            <p>Cheasy skyr skovbær 0,2%</p>
+            <p class="brand">CHEASY, SKYR YOGHURT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product977')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product978" class="product" onclick="openOverlay('product978')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20302/image/1641377940/600.jpg" alt="SØDMÆLK 3,5%">
+            <h3>SØDMÆLK 3,5%</h3>
+            <p class="price">7.50 DKK</p>
+            <p>Arla sødmælk 3,5%</p>
+            <p class="brand">ARLA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product978')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product982" class="product" onclick="openOverlay('product982')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20355/image/1694426094/600.jpg" alt="KIDS SMOOTHIE">
+            <h3>KIDS SMOOTHIE</h3>
+            <p class="price">34.95 DKK</p>
+            <p>Innocent kids smoothie (grøn)</p>
+            <p class="brand">INNOCENT, JORDBÆR, HINDBÆR & ÆBLE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product982')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product983" class="product" onclick="openOverlay('product983')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20357/image/1665039194/600.jpg" alt="FRAPPUCCINO ISKAFFE">
+            <h3>FRAPPUCCINO ISKAFFE</h3>
+            <p class="price">19.50 DKK</p>
+            <p>Starbucks frappuccino iskaffe</p>
+            <p class="brand">STARBUCKS, CREMET KAFFEDRIK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product983')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product991" class="product" onclick="openOverlay('product991')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21200/image/1633010975/600.jpg" alt="KÆRNEMÆLK 0,3%">
+            <h3>KÆRNEMÆLK 0,3%</h3>
+            <p class="price">13.25 DKK</p>
+            <p>Arla kærnemælk 0,3%</p>
+            <p class="brand">ARLA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product991')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1001" class="product" onclick="openOverlay('product1001')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21518/image/1682080018/600.jpg" alt="CREMEFRAICHE 18%">
+            <h3>CREMEFRAICHE 18%</h3>
+            <p class="price">24.95 DKK</p>
+            <p>Karolines Køkken cremefraiche 18%, økologisk</p>
+            <p class="brand">KAROLINES KØKKEN, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1001')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1010" class="product" onclick="openOverlay('product1010')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21863/image/1710670770/600.jpg" alt="PISKEFLØDE 36%">
+            <h3>PISKEFLØDE 36%</h3>
+            <p class="price">14.25 DKK</p>
+            <p>Karolines Køkken piskefløde 36%</p>
+            <p class="brand">KAROLINES KØKKEN</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1010')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1011" class="product" onclick="openOverlay('product1011')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21878/image/1702904491/600.jpg" alt="MADLAVNINGSFLØDE 8%">
+            <h3>MADLAVNINGSFLØDE 8%</h3>
+            <p class="price">13.75 DKK</p>
+            <p>Karolines madlavningsfløde 8%</p>
+            <p class="brand">KAROLINES KØKKEN</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1011')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1012" class="product" onclick="openOverlay('product1012')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21879/image/1702904552/600.jpg" alt="MADLAVNINGSFLØDE 15%">
+            <h3>MADLAVNINGSFLØDE 15%</h3>
+            <p class="price">23.95 DKK</p>
+            <p>Karolines madlavningsfløde 15%</p>
+            <p class="brand">KAROLINES KØKKEN</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1012')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1013" class="product" onclick="openOverlay('product1013')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21880/image/1657012219/600.jpg" alt="MADLAVNINGSFLØDE 8%">
+            <h3>MADLAVNINGSFLØDE 8%</h3>
+            <p class="price">16.95 DKK</p>
+            <p>GRAM SLOT madlavningsfløde 8%, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1013')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1014" class="product" onclick="openOverlay('product1014')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21894/image/1666280148/600.jpg" alt="CREMEFINE 7%">
+            <h3>CREMEFINE 7%</h3>
+            <p class="price">15.95 DKK</p>
+            <p>Cremefine madlavning 7%</p>
+            <p class="brand">GOD TIL MADLAVNING</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1014')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1015" class="product" onclick="openOverlay('product1015')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21895/image/1666280180/600.jpg" alt="CREMEFINE 15%">
+            <h3>CREMEFINE 15%</h3>
+            <p class="price">15.95 DKK</p>
+            <p>Cremefine madlavning 15%</p>
+            <p class="brand">GOD TIL MADLAVNING</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1015')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1016" class="product" onclick="openOverlay('product1016')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21896/image/1618232655/600.jpg" alt="FLØDEALTERNATIV">
+            <h3>FLØDEALTERNATIV</h3>
+            <p class="price">8.95 DKK</p>
+            <p>Oma til madlavning 4%</p>
+            <p class="brand">OMA TIL MADLAVNING 4%</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1016')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1017" class="product" onclick="openOverlay('product1017')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21901/image/1677490245/600.jpg" alt="KAFFEFLØDE 10%">
+            <h3>KAFFEFLØDE 10%</h3>
+            <p class="price">8.75 DKK</p>
+            <p>Arla kaffefløde UHT 10%</p>
+            <p class="brand">ARLA, UHT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1017')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1019" class="product" onclick="openOverlay('product1019')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23804/image/1705413452/600.jpg" alt="ANANAS PASSION">
+            <h3>ANANAS PASSION</h3>
+            <p class="price">13.25 DKK</p>
+            <p>Arla Cultura ananas passion</p>
+            <p class="brand">ARLA CULTURA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1019')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1020" class="product" onclick="openOverlay('product1020')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23806/image/1705413488/600.jpg" alt="HINDBÆR">
+            <h3>HINDBÆR</h3>
+            <p class="price">13.25 DKK</p>
+            <p>Arla Cultura hindbær</p>
+            <p class="brand">ARLA CULTURA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1020')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1021" class="product" onclick="openOverlay('product1021')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23807/image/1705413564/600.jpg" alt="NATUREL">
+            <h3>NATUREL</h3>
+            <p class="price">12.50 DKK</p>
+            <p>Arla Cultura naturel</p>
+            <p class="brand">ARLA CULTURA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1021')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1022" class="product" onclick="openOverlay('product1022')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23815/image/1707130985/600.jpg" alt="KEFIR NATUREL">
+            <h3>KEFIR NATUREL</h3>
+            <p class="price">16.95 DKK</p>
+            <p>Arla Cultura kefir naturel 2,5%, laktosefri</p>
+            <p class="brand">ARLA CULTURA, LAKTOSEFRI</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1022')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1046" class="product" onclick="openOverlay('product1046')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21474/image/1658498463/600.jpg" alt="LETMÆLK 1,5%">
+            <h3>LETMÆLK 1,5%</h3>
+            <p class="price">16.75 DKK</p>
+            <p>Arla letmælk 1,5%, lactofree</p>
+            <p class="brand">ARLA, LACTOFREE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1046')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1047" class="product" onclick="openOverlay('product1047')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21476/image/1664367154/600.jpg" alt="MINIMÆLK 0,4%">
+            <h3>MINIMÆLK 0,4%</h3>
+            <p class="price">15.75 DKK</p>
+            <p>Arla minimælk 0,4%, lactofree & økologisk</p>
+            <p class="brand">ARLA, LACTOFREE & ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1047')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1048" class="product" onclick="openOverlay('product1048')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21479/image/1658498506/600.jpg" alt="SØDMÆLK 3,5%">
+            <h3>SØDMÆLK 3,5%</h3>
+            <p class="price">17.75 DKK</p>
+            <p>Arla sødmælk 3,5%, lactofree</p>
+            <p class="brand">ARLA, LACTOFREE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1048')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1049" class="product" onclick="openOverlay('product1049')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21480/image/1686129785/600.jpg" alt="MINIMÆLK 0,4%">
+            <h3>MINIMÆLK 0,4%</h3>
+            <p class="price">13.25 DKK</p>
+            <p>Arla 24 timer minimælk 0,4%</p>
+            <p class="brand">ARLA 24 TIMER</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1049')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1050" class="product" onclick="openOverlay('product1050')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21488/image/1665038773/600.jpg" alt="MINIMÆLK">
+            <h3>MINIMÆLK</h3>
+            <p class="price">4.00 DKK</p>
+            <p>Arla minimælk, økologisk</p>
+            <p class="brand">ARLA, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1050')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1051" class="product" onclick="openOverlay('product1051')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21497/image/1718021967/600.jpg" alt="MINIMÆLK 0,4%">
+            <h3>MINIMÆLK 0,4%</h3>
+            <p class="price">13.25 DKK</p>
+            <p>Arla minimælk 0,4%, økologisk</p>
+            <p class="brand">ARLA, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1051')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1052" class="product" onclick="openOverlay('product1052')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21499/image/1718025568/600.jpg" alt="LETMÆLK 1,5%">
+            <h3>LETMÆLK 1,5%</h3>
+            <p class="price">14.25 DKK</p>
+            <p>Arla letmælk 1,5%, økologisk</p>
+            <p class="brand">ARLA, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1052')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1053" class="product" onclick="openOverlay('product1053')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21506/image/1708946875/600.jpg" alt="KÆRNEMÆLK 0,5%">
+            <h3>KÆRNEMÆLK 0,5%</h3>
+            <p class="price">13.95 DKK</p>
+            <p>GRAM SLOT kærnemælk 0,5%, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1053')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1054" class="product" onclick="openOverlay('product1054')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21510/image/1718025568/600.jpg" alt="SØDMÆLK 3,5%">
+            <h3>SØDMÆLK 3,5%</h3>
+            <p class="price">15.25 DKK</p>
+            <p>Arla sødmælk 3,5%, økologisk</p>
+            <p class="brand">ARLA, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1054')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1055" class="product" onclick="openOverlay('product1055')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21513/image/1718025569/600.jpg" alt="SKUMMETMÆLK 0,1%">
+            <h3>SKUMMETMÆLK 0,1%</h3>
+            <p class="price">13.25 DKK</p>
+            <p>Arla skummetmælk 0,1%, økologisk</p>
+            <p class="brand">ARLA, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1055')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1058" class="product" onclick="openOverlay('product1058')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21927/image/1710669785/600.jpg" alt="PISKEFLØDE 36% FEDT">
+            <h3>PISKEFLØDE 36% FEDT</h3>
+            <p class="price">25.95 DKK</p>
+            <p>REMA 1000 Piskefløde 36% fedt</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1058')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1059" class="product" onclick="openOverlay('product1059')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21930/image/1687170618/600.jpg" alt="FRAICHE 9%">
+            <h3>FRAICHE 9%</h3>
+            <p class="price">17.50 DKK</p>
+            <p>REMA 1000 fraiche 9%</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1059')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1060" class="product" onclick="openOverlay('product1060')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21933/image/1714059710/600.jpg" alt="FRAICHE 5%">
+            <h3>FRAICHE 5%</h3>
+            <p class="price">19.95 DKK</p>
+            <p>Cheasy fraiche  5%</p>
+            <p class="brand">CHEASY</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1060')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1061" class="product" onclick="openOverlay('product1061')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21937/image/1666183360/600.jpg" alt="FRAICHE 13%">
+            <h3>FRAICHE 13%</h3>
+            <p class="price">11.95 DKK</p>
+            <p>Arla fraiche 13%, lactofree</p>
+            <p class="brand">ARLA, LACTOFREE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1061')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1062" class="product" onclick="openOverlay('product1062')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/220017/image/1618570552/600.jpg" alt="ØKOLOGISKE ÆG">
+            <h3>ØKOLOGISKE ÆG</h3>
+            <p class="price">28.00 DKK</p>
+            <p>REMA 1000 Øko æg, M/L</p>
+            <p class="brand">REMA 1000 STR. M/L</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1062')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1063" class="product" onclick="openOverlay('product1063')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/220018/image/1618570552/600.jpg" alt="SLOTSÆG">
+            <h3>SLOTSÆG</h3>
+            <p class="price">28.00 DKK</p>
+            <p>Vallø Slotsæg, øko</p>
+            <p class="brand">VALLØ</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1063')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1064" class="product" onclick="openOverlay('product1064')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/220019/image/1618570552/600.jpg" alt="LILLEPUTTER ÆG">
+            <h3>LILLEPUTTER ÆG</h3>
+            <p class="price">14.95 DKK</p>
+            <p>Lilleputter øko æg 6 stk</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1064')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1065" class="product" onclick="openOverlay('product1065')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/220032/image/1619003851/600.jpg" alt="SKRABEÆG">
+            <h3>SKRABEÆG</h3>
+            <p class="price">34.95 DKK</p>
+            <p>DAVA skrabeæg S/M</p>
+            <p class="brand">STR. S/M</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1065')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1066" class="product" onclick="openOverlay('product1066')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22006/image/1720609668/600.jpg" alt="A38 NATUREL 0,4%">
+            <h3>A38 NATUREL 0,4%</h3>
+            <p class="price">18.95 DKK</p>
+            <p>Arla Cultura A38 naturel 0,4%, økologisk</p>
+            <p class="brand">ARLA CULTURA, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1066')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1067" class="product" onclick="openOverlay('product1067')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22015/image/1720609685/600.jpg" alt="A38 HINDBÆR 0,4%">
+            <h3>A38 HINDBÆR 0,4%</h3>
+            <p class="price">18.95 DKK</p>
+            <p>Arla Cultura A38 hindbær 0,4%</p>
+            <p class="brand">ARLA CULTURA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1067')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1072" class="product" onclick="openOverlay('product1072')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24015/image/1664273976/600.jpg" alt="VANILJE">
+            <h3>VANILJE</h3>
+            <p class="price">32.95 DKK</p>
+            <p>Cheasy skyr vanilje</p>
+            <p class="brand">CHEASY, SKYR YOGHURT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1072')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1074" class="product" onclick="openOverlay('product1074')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24017/image/1698250234/600.jpg" alt="MANGO & LIME">
+            <h3>MANGO & LIME</h3>
+            <p class="price">32.95 DKK</p>
+            <p>Cheasy skyr mango/lime 0,2% fedt</p>
+            <p class="brand">CHEASY, SKYR YOGHURT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1074')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1082" class="product" onclick="openOverlay('product1082')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20062/image/1719418765/600.jpg" alt="SMØRBAR BLOK">
+            <h3>SMØRBAR BLOK</h3>
+            <p class="price">17.00 DKK</p>
+            <p>Naturli' smørbar blok, økologisk</p>
+            <p class="brand">NATURLI', ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1082')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1096" class="product" onclick="openOverlay('product1096')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21096/image/1714060743/600.jpg" alt="SKUMMETMÆLK">
+            <h3>SKUMMETMÆLK</h3>
+            <p class="price">10.95 DKK</p>
+            <p>REMA 1000 skummetmælk 0,1% fedt</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1096')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1101" class="product" onclick="openOverlay('product1101')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21568/image/1725436103/600.jpg" alt="JORDBÆR YOGHURT">
+            <h3>JORDBÆR YOGHURT</h3>
+            <p class="price">15.00 DKK</p>
+            <p>Øko. yoghurt jordbær</p>
+            <p class="brand">ØKO.</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1101')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1102" class="product" onclick="openOverlay('product1102')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21569/image/1725436038/600.jpg" alt="PÆRE & BANAN 0,4%">
+            <h3>PÆRE & BANAN 0,4%</h3>
+            <p class="price">22.95 DKK</p>
+            <p>Arla pære & banan yoghurt 0,4%, økologisk</p>
+            <p class="brand">ARLA, YOGHURT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1102')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1105" class="product" onclick="openOverlay('product1105')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21646/image/1667556324/600.jpg" alt="KÆRGÅRDEN SMØRBAR">
+            <h3>KÆRGÅRDEN SMØRBAR</h3>
+            <p class="price">28.95 DKK</p>
+            <p>Kærgården smørbar, økologisk</p>
+            <p class="brand">ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1105')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1106" class="product" onclick="openOverlay('product1106')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21649/image/1718023089/600.jpg" alt="SMØR">
+            <h3>SMØR</h3>
+            <p class="price">26.95 DKK</p>
+            <p>Arla smør, økologisk</p>
+            <p class="brand">ARLA, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1106')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1107" class="product" onclick="openOverlay('product1107')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21659/image/1676977711/600.jpg" alt="PISKEFLØDE 38%">
+            <h3>PISKEFLØDE 38%</h3>
+            <p class="price">27.95 DKK</p>
+            <p>Karolines piskefløde 38%, økologisk</p>
+            <p class="brand">KAROLINES KØKKEN, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1107')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1110" class="product" onclick="openOverlay('product1110')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21810/image/1667557614/600.jpg" alt="PISKEFLØDE 36%">
+            <h3>PISKEFLØDE 36%</h3>
+            <p class="price">15.25 DKK</p>
+            <p>Arla piskefløde 36%, lactofree</p>
+            <p class="brand">ARLA, LACTOFREE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1110')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1111" class="product" onclick="openOverlay('product1111')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21816/image/1618232650/600.jpg" alt="FLØDESKUM PÅ DÅSE">
+            <h3>FLØDESKUM PÅ DÅSE</h3>
+            <p class="price">22.95 DKK</p>
+            <p>Flødeskum på dåse u/sukker</p>
+            <p class="brand">PRÉSIDENT, UDEN SUKKER</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1111')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1113" class="product" onclick="openOverlay('product1113')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23935/image/1633519814/600.jpg" alt="MULTIFRUGT JUICE">
+            <h3>MULTIFRUGT JUICE</h3>
+            <p class="price">19.95 DKK</p>
+            <p>REMA 1000 multifrugt juice</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1113')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1114" class="product" onclick="openOverlay('product1114')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23946/image/1719302996/600.jpg" alt="INNOCENT JUICE">
+            <h3>INNOCENT JUICE</h3>
+            <p class="price">34.95 DKK</p>
+            <p>Innocent Hind/æble juice</p>
+            <p class="brand">HINDBÆR ÆBLE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1114')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1115" class="product" onclick="openOverlay('product1115')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23971/image/1720771101/600.jpg" alt="PROTEINDRIK">
+            <h3>PROTEINDRIK</h3>
+            <p class="price">12.95 DKK</p>
+            <p>Proteindrik White Strawberry</p>
+            <p class="brand">WHITE STRAWBERRY</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1115')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1116" class="product" onclick="openOverlay('product1116')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23982/image/1705413712/600.jpg" alt="JORDBÆR YOGHURT">
+            <h3>JORDBÆR YOGHURT</h3>
+            <p class="price">15.95 DKK</p>
+            <p>Arla Cultura drik jordbær</p>
+            <p class="brand">ARLA CULTURA, DRIKKE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1116')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1117" class="product" onclick="openOverlay('product1117')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23986/image/1688733719/600.jpg" alt="PROTEIN DRIKKEYOGHURT">
+            <h3>PROTEIN DRIKKEYOGHURT</h3>
+            <p class="price">15.95 DKK</p>
+            <p>Arla protein drikkeyoghurt med hindbær</p>
+            <p class="brand">ARLA, HINDBÆR</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1117')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1118" class="product" onclick="openOverlay('product1118')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23987/image/1705413614/600.jpg" alt="BLÅBÆR YOGHURT">
+            <h3>BLÅBÆR YOGHURT</h3>
+            <p class="price">15.95 DKK</p>
+            <p>Arla Cultura drik blåbær</p>
+            <p class="brand">ARLA CULTURA, DRIKKE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1118')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1120" class="product" onclick="openOverlay('product1120')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24001/image/1729167571/600.jpg" alt="ACTIMEL">
+            <h3>ACTIMEL</h3>
+            <p class="price">21.95 DKK</p>
+            <p>Actimel jordbær 4 stk.</p>
+            <p class="brand">JORDBÆR 4 STK.</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1120')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1123" class="product" onclick="openOverlay('product1123')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24195/image/1708947017/600.jpg" alt="SKYR MED LEMON">
+            <h3>SKYR MED LEMON</h3>
+            <p class="price">22.95 DKK</p>
+            <p>Stay strong protein creamy skyr med lemon, økologi</p>
+            <p class="brand">STAY STRONG, ØKOLOGISK, PROTEIN</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1123')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1128" class="product" onclick="openOverlay('product1128')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/20129/image/1708946915/600.jpg" alt="SØDMÆLK 3,5%">
+            <h3>SØDMÆLK 3,5%</h3>
+            <p class="price">15.50 DKK</p>
+            <p>GRAM SLOT sødmælk 3,5%, økolgisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1128')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1130" class="product" onclick="openOverlay('product1130')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21566/image/1725436146/600.jpg" alt="VANILJE YOGHURT 0,5%">
+            <h3>VANILJE YOGHURT 0,5%</h3>
+            <p class="price">22.95 DKK</p>
+            <p>Arla vanilje yoghurt 0,5%, økologisk</p>
+            <p class="brand">ARLA, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1130')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1135" class="product" onclick="openOverlay('product1135')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21567/image/1725436083/600.jpg" alt="NATUREL YOGHURT 0,5%">
+            <h3>NATUREL YOGHURT 0,5%</h3>
+            <p class="price">18.95 DKK</p>
+            <p>Arla naturel yoghurt 0,5%, økologisk</p>
+            <p class="brand">ARLA, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1135')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1139" class="product" onclick="openOverlay('product1139')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22022/image/1700146311/600.jpg" alt="NATUREL">
+            <h3>NATUREL</h3>
+            <p class="price">20.95 DKK</p>
+            <p>Cheasy naturel yoghurt 0,1%</p>
+            <p class="brand">CHEASY, YOGHURT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1139')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1140" class="product" onclick="openOverlay('product1140')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22031/image/1708946428/600.jpg" alt="TYKMÆLK 3,5%">
+            <h3>TYKMÆLK 3,5%</h3>
+            <p class="price">19.95 DKK</p>
+            <p>GRAM SLOT tykmælk 3,5%, økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1140')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1141" class="product" onclick="openOverlay('product1141')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22032/image/1618232661/600.jpg" alt="TYKMÆLK">
+            <h3>TYKMÆLK</h3>
+            <p class="price">16.50 DKK</p>
+            <p>Kløver tykmælk</p>
+            <p class="brand">KLØVER</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1141')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1142" class="product" onclick="openOverlay('product1142')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22055/image/1718021970/600.jpg" alt="A38 YMER 3,5%">
+            <h3>A38 YMER 3,5%</h3>
+            <p class="price">21.95 DKK</p>
+            <p>Arla A38 ymer 3,5%, økologisk</p>
+            <p class="brand">ARLA, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1142')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1143" class="product" onclick="openOverlay('product1143')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22078/image/1667556604/600.jpg" alt="NATUREL YOGURT 1,5%">
+            <h3>NATUREL YOGURT 1,5%</h3>
+            <p class="price">15.50 DKK</p>
+            <p>Kløver naturel yoghurt 1,5%</p>
+            <p class="brand">KLØVER</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1143')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1144" class="product" onclick="openOverlay('product1144')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22084/image/1720609708/600.jpg" alt="A38 NATUREL 1,5%">
+            <h3>A38 NATUREL 1,5%</h3>
+            <p class="price">18.95 DKK</p>
+            <p>Arla Cultura A38 naturel 1,5%</p>
+            <p class="brand">ARLA CULTURA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1144')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1145" class="product" onclick="openOverlay('product1145')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22218/image/1667556744/600.jpg" alt="NATUREL YOGHURT">
+            <h3>NATUREL YOGHURT</h3>
+            <p class="price">16.50 DKK</p>
+            <p>Kløver naturel sødmælksyoghurt</p>
+            <p class="brand">KLØVER</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1145')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1146" class="product" onclick="openOverlay('product1146')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22233/image/1697448164/600.jpg" alt="PEACH MELBA YOGHURT">
+            <h3>PEACH MELBA YOGHURT</h3>
+            <p class="price">16.95 DKK</p>
+            <p>REMA 1000 peach melba yoghurt 1,4% fedt</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1146')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1147" class="product" onclick="openOverlay('product1147')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22234/image/1697536550/600.jpg" alt="APPELSIN YOGHURT">
+            <h3>APPELSIN YOGHURT</h3>
+            <p class="price">16.95 DKK</p>
+            <p>REMA 1000 appelsin yoghurt 1,4% fedt</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1147')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1148" class="product" onclick="openOverlay('product1148')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22237/image/1697449495/600.jpg" alt="PÆRE/BANAN YOGHURT">
+            <h3>PÆRE/BANAN YOGHURT</h3>
+            <p class="price">16.95 DKK</p>
+            <p>REMA 1000 pære/banan yoghurt 3,1% fedt</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1148')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1150" class="product" onclick="openOverlay('product1150')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/232125/image/1618570610/600.jpg" alt="SVINEFEDT">
+            <h3>SVINEFEDT</h3>
+            <p class="price">24.95 DKK</p>
+            <p>Dragsbæk svinefedt</p>
+            <p class="brand">DRAGSBÆK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1150')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1154" class="product" onclick="openOverlay('product1154')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23400/image/1713176447/600.jpg" alt="SKYR NATUREL">
+            <h3>SKYR NATUREL</h3>
+            <p class="price">25.95 DKK</p>
+            <p>REMA 1000 skyr 0,2%</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1154')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1155" class="product" onclick="openOverlay('product1155')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23418/image/1676978547/600.jpg" alt="CREMEFRAICHE 18%">
+            <h3>CREMEFRAICHE 18%</h3>
+            <p class="price">11.95 DKK</p>
+            <p>Karolines Køkken creme fraiche 18%</p>
+            <p class="brand">KAROLINES KØKKEN</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1155')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1156" class="product" onclick="openOverlay('product1156')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23420/image/1686733354/600.jpg" alt="CREME FRAICHE 18%">
+            <h3>CREME FRAICHE 18%</h3>
+            <p class="price">18.95 DKK</p>
+            <p>REMA 1000 creme fraiche 18%</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1156')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1170" class="product" onclick="openOverlay('product1170')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24740/image/1708946695/600.jpg" alt="KAKAOMÆLK 0,5%">
+            <h3>KAKAOMÆLK 0,5%</h3>
+            <p class="price">18.95 DKK</p>
+            <p>GRAM SLOT kakaoskummetmælk,økologisk</p>
+            <p class="brand">GRAM SLOT, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1170')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1171" class="product" onclick="openOverlay('product1171')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24801/image/1654001286/600.jpg" alt="CAFFE LATTE">
+            <h3>CAFFE LATTE</h3>
+            <p class="price">6.95 DKK</p>
+            <p>Caffe latte cappuccino</p>
+            <p class="brand">CAPPUCCINO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1171')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1180" class="product" onclick="openOverlay('product1180')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22427/image/1720700367/600.jpg" alt="PÆRE/BANAN">
+            <h3>PÆRE/BANAN</h3>
+            <p class="price">5.95 DKK</p>
+            <p>Arla pære/banan yoghurt, økologisk</p>
+            <p class="brand">ARLA, YOGHURT ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1180')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1181" class="product" onclick="openOverlay('product1181')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22428/image/1720700367/600.jpg" alt="JORDBÆR">
+            <h3>JORDBÆR</h3>
+            <p class="price">5.95 DKK</p>
+            <p>Arla jordbær yoghurt, økologisk</p>
+            <p class="brand">ARLA, YOGHURT ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1181')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1182" class="product" onclick="openOverlay('product1182')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/225515/image/1618570558/600.jpg" alt="ØKOLOGISKE ÆG">
+            <h3>ØKOLOGISKE ÆG</h3>
+            <p class="price">35.00 DKK</p>
+            <p>Økologiske æg str. M/L</p>
+            <p class="brand">STR. M/L</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1182')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1183" class="product" onclick="openOverlay('product1183')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/225528/image/1715678418/600.jpg" alt="ÆGGEBLOMMER">
+            <h3>ÆGGEBLOMMER</h3>
+            <p class="price">15.95 DKK</p>
+            <p>Pasteuriserede Æggeblommer</p>
+            <p class="brand">PASTEURISEREDE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1183')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1184" class="product" onclick="openOverlay('product1184')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/225530/image/1715678418/600.jpg" alt="ÆGGEHVIDER">
+            <h3>ÆGGEHVIDER</h3>
+            <p class="price">14.95 DKK</p>
+            <p>Pasteuriserede Æggehvider</p>
+            <p class="brand">PASTEURISEREDE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1184')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1185" class="product" onclick="openOverlay('product1185')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/225533/image/1623758102/600.jpg" alt="ÆGGESTAND">
+            <h3>ÆGGESTAND</h3>
+            <p class="price">11.95 DKK</p>
+            <p>Æggestand Øko.</p>
+            <p class="brand">ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1185')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1186" class="product" onclick="openOverlay('product1186')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/225534/image/1715678418/600.jpg" alt="HELÆG">
+            <h3>HELÆG</h3>
+            <p class="price">15.95 DKK</p>
+            <p>Pasteuriserede Helæg</p>
+            <p class="brand">PASTEURISEREDE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1186')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1187" class="product" onclick="openOverlay('product1187')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22756/image/1704723894/600.jpg" alt="JORDBÆR DRIK YOGHURT">
+            <h3>JORDBÆR DRIK YOGHURT</h3>
+            <p class="price">12.95 DKK</p>
+            <p>Yoggi drik jordbær</p>
+            <p class="brand">YOGGI</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1187')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1188" class="product" onclick="openOverlay('product1188')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22795/image/1725263732/600.jpg" alt="CREMET SKYR VANILJE">
+            <h3>CREMET SKYR VANILJE</h3>
+            <p class="price">18.50 DKK</p>
+            <p>Arla cremet skyr vanilje, økologisk</p>
+            <p class="brand">ARLA, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1188')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1189" class="product" onclick="openOverlay('product1189')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22799/image/1704893036/600.jpg" alt="SKYR VANILJE">
+            <h3>SKYR VANILJE</h3>
+            <p class="price">9.75 DKK</p>
+            <p>Cheasy skyr vanilje</p>
+            <p class="brand">CHEASY</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1189')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1190" class="product" onclick="openOverlay('product1190')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22823/image/1662387574/600.jpg" alt="VANILJE">
+            <h3>VANILJE</h3>
+            <p class="price">22.95 DKK</p>
+            <p>Cheasy yoghurt vanilje 0,1%</p>
+            <p class="brand">CHEASY, YOGHURT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1190')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1191" class="product" onclick="openOverlay('product1191')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22824/image/1661948373/600.jpg" alt="JORDBÆR/RABARBER">
+            <h3>JORDBÆR/RABARBER</h3>
+            <p class="price">22.95 DKK</p>
+            <p>Cheasy jordbær & rabarber yoghurt 0,1%</p>
+            <p class="brand">CHEASY, YOGHURT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1191')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1192" class="product" onclick="openOverlay('product1192')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22829/image/1662387574/600.jpg" alt="SKOVBÆR">
+            <h3>SKOVBÆR</h3>
+            <p class="price">22.95 DKK</p>
+            <p>Cheasy skovbær yoghurt 0,1%</p>
+            <p class="brand">CHEASY, YOGHURT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1192')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1193" class="product" onclick="openOverlay('product1193')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22831/image/1664273976/600.jpg" alt="FERSKEN/PASSION">
+            <h3>FERSKEN/PASSION</h3>
+            <p class="price">22.95 DKK</p>
+            <p>Cheasy fersken & passionsfrugt yoghurt 0,1%</p>
+            <p class="brand">CHEASY, YOGHURT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1193')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1199" class="product" onclick="openOverlay('product1199')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/232111/image/1693228940/600.jpg" alt="BECEL SMØRBAR">
+            <h3>BECEL SMØRBAR</h3>
+            <p class="price">18.95 DKK</p>
+            <p>Becel Let minarine</p>
+            <p class="brand">LET</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1199')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1200" class="product" onclick="openOverlay('product1200')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24271/image/1658139586/600.jpg" alt="RISDESSERT">
+            <h3>RISDESSERT</h3>
+            <p class="price">6.95 DKK</p>
+            <p>Rice'n'go risdessert med jordbær</p>
+            <p class="brand">RICE'N'GO, MED JORDBÆR</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1200')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1201" class="product" onclick="openOverlay('product1201')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24401/image/1702904586/600.jpg" alt="JORDBÆR MILKSHAKE">
+            <h3>JORDBÆR MILKSHAKE</h3>
+            <p class="price">12.25 DKK</p>
+            <p>Matilde milkshake jordbær</p>
+            <p class="brand">MATILDE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1201')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1202" class="product" onclick="openOverlay('product1202')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24402/image/1702904616/600.jpg" alt="KAKAO MILKSHAKE">
+            <h3>KAKAO MILKSHAKE</h3>
+            <p class="price">12.25 DKK</p>
+            <p>Matilde milkshake kakao</p>
+            <p class="brand">MATILDE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1202')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1203" class="product" onclick="openOverlay('product1203')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24406/image/1702904671/600.jpg" alt="VANILJE MILKSHAKE">
+            <h3>VANILJE MILKSHAKE</h3>
+            <p class="price">12.25 DKK</p>
+            <p>Matilde milkshake vanillje</p>
+            <p class="brand">MATILDE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1203')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1205" class="product" onclick="openOverlay('product1205')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24655/image/1631000482/600.jpg" alt="KAKAO SKUMMETMÆLK">
+            <h3>KAKAO SKUMMETMÆLK</h3>
+            <p class="price">13.95 DKK</p>
+            <p>REMA 1000 kakaoskummetmælk</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1205')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1208" class="product" onclick="openOverlay('product1208')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24713/image/1724938112/600.jpg" alt="MATILDE KAKAO">
+            <h3>MATILDE KAKAO</h3>
+            <p class="price">20.50 DKK</p>
+            <p>Matilde kakao skummetmælk</p>
+            <p class="brand">SKUMMETMÆLK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1208')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1228" class="product" onclick="openOverlay('product1228')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22239/image/1697449904/600.jpg" alt="JORDBÆR YOGHURT">
+            <h3>JORDBÆR YOGHURT</h3>
+            <p class="price">16.95 DKK</p>
+            <p>REMA 1000 jordbær yoghurt 3,1% fedt</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1228')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1229" class="product" onclick="openOverlay('product1229')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22251/image/1667558923/600.jpg" alt="PÆRE & BANAN YOGHURT">
+            <h3>PÆRE & BANAN YOGHURT</h3>
+            <p class="price">20.95 DKK</p>
+            <p>Yoggi pære & banan yoghurt 1,4%</p>
+            <p class="brand">YOGGI</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1229')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1230" class="product" onclick="openOverlay('product1230')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22260/image/1667556944/600.jpg" alt="JORDBÆR YOGHURT 1,4%">
+            <h3>JORDBÆR YOGHURT 1,4%</h3>
+            <p class="price">20.95 DKK</p>
+            <p>Yoggi jordbær yoghurt 1,4%</p>
+            <p class="brand">YOGGI</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1230')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1231" class="product" onclick="openOverlay('product1231')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22261/image/1667557407/600.jpg" alt="HAVENS BÆR YOGHURT 1,4%">
+            <h3>HAVENS BÆR YOGHURT 1,4%</h3>
+            <p class="price">20.95 DKK</p>
+            <p>Yoggi havens bær yoghurt 1,4%</p>
+            <p class="brand">YOGGI</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1231')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1232" class="product" onclick="openOverlay('product1232')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22393/image/1667557570/600.jpg" alt="NATUREL YOGHURT">
+            <h3>NATUREL YOGHURT</h3>
+            <p class="price">18.50 DKK</p>
+            <p>Arla naturel yoghurt, lactofree</p>
+            <p class="brand">ARLA, LACTOFREE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1232')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1233" class="product" onclick="openOverlay('product1233')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/22394/image/1667557537/600.jpg" alt="PÆRE/BANAN">
+            <h3>PÆRE/BANAN</h3>
+            <p class="price">20.95 DKK</p>
+            <p>Arla pære/banan yoghurt, lactofree</p>
+            <p class="brand">ARLA, YOGHURT LACTOFREEE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1233')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1234" class="product" onclick="openOverlay('product1234')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/224232/image/1624360848/600.jpg" alt="FRILANDS BRUNCHÆG">
+            <h3>FRILANDS BRUNCHÆG</h3>
+            <p class="price">14.95 DKK</p>
+            <p>Frilandsæg, brunch str. L/XL</p>
+            <p class="brand">STR. L/XL</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1234')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1235" class="product" onclick="openOverlay('product1235')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/224233/image/1624281637/600.jpg" alt="SKRABEÆG">
+            <h3>SKRABEÆG</h3>
+            <p class="price">27.25 DKK</p>
+            <p>Skrabeæg 10 stk str. M/L</p>
+            <p class="brand">STR. M/L</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1235')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1236" class="product" onclick="openOverlay('product1236')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/224239/image/1618570557/600.jpg" alt="LIVSKRAFT SKRABEÆG">
+            <h3>LIVSKRAFT SKRABEÆG</h3>
+            <p class="price">27.25 DKK</p>
+            <p>Skrabeæg, M/L Livskraft</p>
+            <p class="brand">STR. M/L</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1236')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1237" class="product" onclick="openOverlay('product1237')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/224242/image/1624285238/600.jpg" alt="FRILANDSÆG">
+            <h3>FRILANDSÆG</h3>
+            <p class="price">21.25 DKK</p>
+            <p>Frilandsæg, Str. M/L</p>
+            <p class="brand">STR. M/L</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1237')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1240" class="product" onclick="openOverlay('product1240')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24150/image/1618232694/600.jpg" alt="TØR GÆR">
+            <h3>TØR GÆR</h3>
+            <p class="price">2.50 DKK</p>
+            <p>Tør gær display</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1240')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1244" class="product" onclick="openOverlay('product1244')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24155/image/1618232694/600.jpg" alt="GÆR">
+            <h3>GÆR</h3>
+            <p class="price">1.50 DKK</p>
+            <p>Gær</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1244')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1245" class="product" onclick="openOverlay('product1245')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24156/image/1719834372/600.jpg" alt="GÆR">
+            <h3>GÆR</h3>
+            <p class="price">4.95 DKK</p>
+            <p>Gær, økologisk</p>
+            <p class="brand">ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1245')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1246" class="product" onclick="openOverlay('product1246')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24170/image/1676039580/600.jpg" alt="PROTEIN BUDDING">
+            <h3>PROTEIN BUDDING</h3>
+            <p class="price">14.95 DKK</p>
+            <p>Arla protein chokolade pudding laktosefri</p>
+            <p class="brand">ARLA, CHOKOLADE SMAG</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1246')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1247" class="product" onclick="openOverlay('product1247')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24171/image/1686840927/600.jpg" alt="PROTEIN BUDDING">
+            <h3>PROTEIN BUDDING</h3>
+            <p class="price">14.95 DKK</p>
+            <p>Arla protein hasselnød pudding laktosefri</p>
+            <p class="brand">ARLA, HASSELNØDDE SMAG</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1247')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1248" class="product" onclick="openOverlay('product1248')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24187/image/1726935567/600.jpg" alt="PROTEIN BUDDING">
+            <h3>PROTEIN BUDDING</h3>
+            <p class="price">11.95 DKK</p>
+            <p>Stay Strong protein pudding vanilla</p>
+            <p class="brand">STAY STRONG, VANILLA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1248')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1252" class="product" onclick="openOverlay('product1252')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/25506/image/1618232707/600.jpg" alt="LURPAK SMØRBAR">
+            <h3>LURPAK SMØRBAR</h3>
+            <p class="price">29.95 DKK</p>
+            <p>Lurpak dansk saltet smørbar</p>
+            <p class="brand">DANSK SALTET</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1252')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1253" class="product" onclick="openOverlay('product1253')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/25511/image/1618232708/600.jpg" alt="LURPAK SMØR">
+            <h3>LURPAK SMØR</h3>
+            <p class="price">29.95 DKK</p>
+            <p>Lurpak dansk saltet smør</p>
+            <p class="brand">DANSK SALTET</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1253')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1254" class="product" onclick="openOverlay('product1254')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/25516/image/1719312342/600.jpg" alt="LURPAK PLANTEBASERET">
+            <h3>LURPAK PLANTEBASERET</h3>
+            <p class="price">23.95 DKK</p>
+            <p>Lurpak plantebaseret smørbar</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1254')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1255" class="product" onclick="openOverlay('product1255')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/25601/image/1621503274/600.jpg" alt="LURPAK SMØR">
+            <h3>LURPAK SMØR</h3>
+            <p class="price">29.95 DKK</p>
+            <p>Lurpak dansk usaltet smør</p>
+            <p class="brand">DANSK USALTET</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1255')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1256" class="product" onclick="openOverlay('product1256')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/25736/image/1727686373/600.jpg" alt="SMØRBAR">
+            <h3>SMØRBAR</h3>
+            <p class="price">16.95 DKK</p>
+            <p>NATURLI' smørbar (fermenteret)</p>
+            <p class="brand">NATURLI'</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1256')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1257" class="product" onclick="openOverlay('product1257')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/25739/image/1661162344/600.jpg" alt="BAKKEDAL">
+            <h3>BAKKEDAL</h3>
+            <p class="price">21.95 DKK</p>
+            <p>Bakkedal, økologisk</p>
+            <p class="brand">ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1257')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1258" class="product" onclick="openOverlay('product1258')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/25748/image/1666183277/600.jpg" alt="ARLA SMØR">
+            <h3>ARLA SMØR</h3>
+            <p class="price">32.95 DKK</p>
+            <p>Arla smør, lactofree</p>
+            <p class="brand">LACTOFREE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1258')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1259" class="product" onclick="openOverlay('product1259')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/25750/image/1715864587/600.jpg" alt="NEM & SMØRBAR">
+            <h3>NEM & SMØRBAR</h3>
+            <p class="price">14.25 DKK</p>
+            <p>REMA 1000 Nem og Smørbar</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1259')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1260" class="product" onclick="openOverlay('product1260')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/25751/image/1728901702/600.jpg" alt="SMØR">
+            <h3>SMØR</h3>
+            <p class="price">18.95 DKK</p>
+            <p>REMA 1000 Smør</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1260')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1261" class="product" onclick="openOverlay('product1261')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/25830/image/1713950597/600.jpg" alt="KÆRGÅRDEN SMØRBAR">
+            <h3>KÆRGÅRDEN SMØRBAR</h3>
+            <p class="price">19.95 DKK</p>
+            <p>Kærgården hvidløg & ramsløg smørbar</p>
+            <p class="brand">HVIDLØG & RAMSLØG</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1261')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1262" class="product" onclick="openOverlay('product1262')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/25845/image/1667556292/600.jpg" alt="KÆRGÅRDEN SMØRBAR">
+            <h3>KÆRGÅRDEN SMØRBAR</h3>
+            <p class="price">25.95 DKK</p>
+            <p>Kærgården let smørbar</p>
+            <p class="brand">LET</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1262')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1263" class="product" onclick="openOverlay('product1263')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/25847/image/1667556267/600.jpg" alt="KÆRGÅRDEN SMØRBAR">
+            <h3>KÆRGÅRDEN SMØRBAR</h3>
+            <p class="price">25.95 DKK</p>
+            <p>Kærgården original smørbar</p>
+            <p class="brand">ORIGINAL</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1263')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1264" class="product" onclick="openOverlay('product1264')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/26000/image/1667556796/600.jpg" alt="KOLDSKÅL MED CITRON">
+            <h3>KOLDSKÅL MED CITRON</h3>
+            <p class="price">18.50 DKK</p>
+            <p>Kløver koldskål med citron, UHT</p>
+            <p class="brand">KLØVER</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1264')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1279" class="product" onclick="openOverlay('product1279')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/21464/image/1714060705/600.jpg" alt="MINIMÆLK 0,4% FEDT">
+            <h3>MINIMÆLK 0,4% FEDT</h3>
+            <p class="price">11.50 DKK</p>
+            <p>REMA 1000 minimælk 0,4% fedt</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1279')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1285" class="product" onclick="openOverlay('product1285')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/26840/image/1665039267/600.jpg" alt="YOGGI VANILJE">
+            <h3>YOGGI VANILJE</h3>
+            <p class="price">9.95 DKK</p>
+            <p>Yoggi vanilje m/müsli top</p>
+            <p class="brand">MED MÜSLITOP</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1285')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1286" class="product" onclick="openOverlay('product1286')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/26888/image/1719415592/600.jpg" alt="MÆLKESNITTE">
+            <h3>MÆLKESNITTE</h3>
+            <p class="price">5.00 DKK</p>
+            <p>REMA 1000 mælkesnitte med kakao</p>
+            <p class="brand">REMA 1000, MED KAKAO</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1286')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1287" class="product" onclick="openOverlay('product1287')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/26889/image/1719415567/600.jpg" alt="MÆLKESNITTE">
+            <h3>MÆLKESNITTE</h3>
+            <p class="price">3.95 DKK</p>
+            <p>REMA 1000 mælkesnitte med honning</p>
+            <p class="brand">REMA 1000, MED HONNING</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1287')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1288" class="product" onclick="openOverlay('product1288')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/26991/image/1728386510/600.jpg" alt="KINDER">
+            <h3>KINDER</h3>
+            <p class="price">23.95 DKK</p>
+            <p>Kinder mælkesnitte 5-pk</p>
+            <p class="brand">MÆLKESNITTE 5 PAK.</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1288')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1324" class="product" onclick="openOverlay('product1324')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/26094/image/1665038658/600.jpg" alt="KOLDSKÅL">
+            <h3>KOLDSKÅL</h3>
+            <p class="price">23.95 DKK</p>
+            <p>Arla koldskål med tykmælk og æg</p>
+            <p class="brand">ARLA, MED TYKMÆLK & ÆG</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1324')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1340" class="product" onclick="openOverlay('product1340')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/26515/image/1618232716/600.jpg" alt="CHOKO DESSERT">
+            <h3>CHOKO DESSERT</h3>
+            <p class="price">5.95 DKK</p>
+            <p>Danette choko dessert</p>
+            <p class="brand">DANETTE</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1340')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1341" class="product" onclick="openOverlay('product1341')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/26518/image/1618232716/600.jpg" alt="TIRAMISÙ">
+            <h3>TIRAMISÙ</h3>
+            <p class="price">13.95 DKK</p>
+            <p>Dolce Mamma tiramisù 2x90 g</p>
+            <p class="brand">DOLCE MAMMA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1341')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1344" class="product" onclick="openOverlay('product1344')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/26815/image/1683707599/600.jpg" alt="VANILJESAUCE">
+            <h3>VANILJESAUCE</h3>
+            <p class="price">16.95 DKK</p>
+            <p>Karolines Køkken vaniljesauce</p>
+            <p class="brand">KAROLINES KØKKEN</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1344')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1345" class="product" onclick="openOverlay('product1345')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/26838/image/1665039327/600.jpg" alt="YOGGI APPELSIN">
+            <h3>YOGGI APPELSIN</h3>
+            <p class="price">9.95 DKK</p>
+            <p>Yoggi appelsin m/müsli top</p>
+            <p class="brand">MED MUSLI TOP</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1345')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1416" class="product" onclick="openOverlay('product1416')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24802/image/1654001322/600.jpg" alt="LATTE MACCHIATO">
+            <h3>LATTE MACCHIATO</h3>
+            <p class="price">6.95 DKK</p>
+            <p>Parmalat latte macchiato</p>
+            <p class="brand">PARMALAT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1416')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1516" class="product" onclick="openOverlay('product1516')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24204/image/1727083175/600.jpg" alt="ALPRO NATUREL">
+            <h3>ALPRO NATUREL</h3>
+            <p class="price">21.55 DKK</p>
+            <p>Alpro plantgurt naturel</p>
+            <p class="brand">PLANTGURT</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1516')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1517" class="product" onclick="openOverlay('product1517')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24205/image/1719389972/600.jpg" alt="BLÅBÆR">
+            <h3>BLÅBÆR</h3>
+            <p class="price">22.45 DKK</p>
+            <p>Alpro soya blåbær</p>
+            <p class="brand">ALPRO SOYA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1517')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1518" class="product" onclick="openOverlay('product1518')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24208/image/1727079571/600.jpg" alt="JORDBÆR">
+            <h3>JORDBÆR</h3>
+            <p class="price">18.95 DKK</p>
+            <p>Alpro soya jordbær 4x125 g</p>
+            <p class="brand">ALPRO SOYA</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1518')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1519" class="product" onclick="openOverlay('product1519')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24212/image/1714058922/600.jpg" alt="DANONINO">
+            <h3>DANONINO</h3>
+            <p class="price">6.00 DKK</p>
+            <p>Danonino jordbær</p>
+            <p class="brand">JORDBÆR</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1519')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1520" class="product" onclick="openOverlay('product1520')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24215/image/1710426427/600.jpg" alt="DANONINO MIX">
+            <h3>DANONINO MIX</h3>
+            <p class="price">16.95 DKK</p>
+            <p>Danonino mix  6x50 g</p>
+            <p class="brand">nan</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1520')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product1521" class="product" onclick="openOverlay('product1521')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/24227/image/1654001045/600.jpg" alt="CITRON FROMAGE">
+            <h3>CITRON FROMAGE</h3>
+            <p class="price">7.95 DKK</p>
+            <p>Dr. Oetker citron fromage</p>
+            <p class="brand">DR. OETKER</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product1521')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2067" class="product" onclick="openOverlay('product2067')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/413282/image/1618576340/600.jpg" alt="GRÆSK YOGHURT 10%">
+            <h3>GRÆSK YOGHURT 10%</h3>
+            <p class="price">31.95 DKK</p>
+            <p>Antos græsk-Yoghurt 10%</p>
+            <p class="brand">ANTOS</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2067')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2068" class="product" onclick="openOverlay('product2068')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/413283/image/1619189241/600.jpg" alt="GRÆSK YOGHURT 2%">
+            <h3>GRÆSK YOGHURT 2%</h3>
+            <p class="price">31.95 DKK</p>
+            <p>Antos Græsk-Yoghurt 2%</p>
+            <p class="brand">ANTOS</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2068')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product2070" class="product" onclick="openOverlay('product2070')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/413292/image/1623773963/600.jpg" alt="GRÆSK YOGHURT 10%">
+            <h3>GRÆSK YOGHURT 10%</h3>
+            <p class="price">17.95 DKK</p>
+            <p>Græsk Yogh.10% Øko. Antos</p>
+            <p class="brand">ANTOS, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product2070')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product3847" class="product" onclick="openOverlay('product3847')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23930/image/1633519718/600.jpg" alt="APPELSIN JUICE">
+            <h3>APPELSIN JUICE</h3>
+            <p class="price">18.95 DKK</p>
+            <p>REMA 1000 appelsin juice frugtk</p>
+            <p class="brand">REMA 1000, MED FRUGTKØD</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product3847')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product3848" class="product" onclick="openOverlay('product3848')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23931/image/1633519747/600.jpg" alt="ÆBLE JUICE">
+            <h3>ÆBLE JUICE</h3>
+            <p class="price">17.95 DKK</p>
+            <p>REMA 1000 æble juice</p>
+            <p class="brand">REMA 1000</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product3848')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product3849" class="product" onclick="openOverlay('product3849')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23932/image/1618232678/600.jpg" alt="APPELSIN JUICE">
+            <h3>APPELSIN JUICE</h3>
+            <p class="price">29.95 DKK</p>
+            <p>REMA 1000 appelsin juice, økologisk</p>
+            <p class="brand">REMA 1000, ØKOLOGISK</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product3849')">Tilføj til kurv</div>
+        </div>
+        
+        <div id="product3850" class="product" onclick="openOverlay('product3850')">
+            <img src="https://cphapp.rema1000.dk/api/v1/catalog/store/1/item/23933/image/1633519779/600.jpg" alt="ÆBLE & BLÅBÆR JUICE">
+            <h3>ÆBLE & BLÅBÆR JUICE</h3>
+            <p class="price">19.95 DKK</p>
+            <p>REMA 1000 æble & blåbær juice med lime</p>
+            <p class="brand">REMA 1000, MED LIME</p>
+            <!-- Grøn boks nederst til højre -->
+            <div class="corner-box" onclick="addProductToCart('product3850')">Tilføj til kurv</div>
+        </div>
+        
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Spotter.</p>
+        </div>
+    </footer>
+</body>
+</html>
+    

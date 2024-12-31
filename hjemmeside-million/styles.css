@@ -1,0 +1,500 @@
+/* Generel layout for body og container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Indkøbskurv */
+.cart {
+    position: absolute; 
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column; /* Sørger for at varerne vises under overskriften */
+    align-items: flex-start; /* Juster indholdet til venstre */
+    z-index: 10;
+}
+
+/* Kurvoverskrift */
+.cart-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left; /* Sørg for, at overskriften står til venstre */
+}
+
+/* Produkterne i kurven */
+.cart-items {
+    display: flex;
+    flex-direction: column; /* Vertikal opstilling af produkterne */
+    gap: 10px; /* Afstand mellem produkter */
+    margin-top: 10px; /* Margin-top mellem overskrift og produkter */
+}
+
+/* Stylingen for individuelle produkter i kurven */
+.cart-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Billeder i indkøbskurven */
+.cart-item img {
+    width: 56px;   /* Sætter bredden til 56px */
+    height: 56px;  /* Sætter højden til 56px */
+    object-fit: contain;  /* Bevarer proportionerne af billedet */
+    border-radius: 8px;  /* Tilføjer afrundede hjørner */
+    margin-right: 10px;
+}
+
+/* Cart icon styling */
+.cart-icon {
+    width: 50px;  /* Sæt bredden til det ønskede mål */
+    height: auto; /* Bevar billedets proportioner */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Ny CSS for at vise antallet af varer i kurven i headeren */
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 1;
+    z-index: 20; /* Sørg for, at tælleren er foran ikonet */
+    display: none; /* Skjul tælleren som standard */
+    visibility: hidden; /* Skjul tælleren */
+}
+
+/* Når tælleren har en værdi større end 0, vis den */
+.cart-count.visible {
+    display: inline-block; /* Vis tælleren */
+    visibility: visible;
+}
+
+/* Søgefelt */
+.search-container {
+    position: relative;
+    max-width: 400px;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Fokus på søgefelt */
+.search-container input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Søgeikon */
+.search-container .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.search-container .search-icon:hover {
+    color: #0056b3;
+}
+
+/* Fjern krydset (X) i søgefeltet */
+.search-container input[type="search"]::-webkit-search-cancel-button {
+    display: none;  /* Skjul krydset i Webkit-browsere */
+}
+
+.search-container input[type="search"]::-moz-search-cancel-button {
+    display: none;  /* Skjul krydset i Firefox */
+}
+
+.search-container input[type="search"]::-ms-clear {
+    display: none;  /* Skjul krydset i Internet Explorer / Edge */
+}
+
+/* Hovedindhold */
+main {
+    padding: 20px 0;
+}
+
+/* Produkt type sektion */
+.product-type {
+    margin-bottom: 30px;
+}
+
+.product-type h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-type a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.product-type a:hover {
+    text-decoration: underline;
+}
+
+/* Produktboksene */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.product {
+    background-color: white;
+    border-radius: 10px;
+    width: 14%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative; /* For at placere den grønne boks korrekt */
+}
+
+/* Billeder i produktbokse */
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.product .price {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 12px;
+    color: #555;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Hover-effekt for produktbokse */
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS animation til produktet */
+.product.added-to-cart {
+    animation: addToCartAnimation 0.5s ease-out; /* 0.5 sek animation */
+}
+
+/* Definer animationen */
+@keyframes addToCartAnimation {
+    0% {
+        transform: scale(1); /* Start på normal størrelse */
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1); /* Gør produktet lidt større */
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1); /* Slut på normal størrelse */
+        opacity: 1;
+    }
+}
+
+/* Overlay for produkt detaljer */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+    padding-top: 60px;
+}
+
+/* Styling for indholdet i overlay */
+.overlay-content {
+    position: relative;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 60%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Billeder i overlayet */
+.overlay-content img {
+    width: 560px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Tekstindhold i overlay (title, price, description) */
+.overlay-content .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.overlay-content .text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay-content .text .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6347;
+    margin-bottom: 15px;
+}
+
+.overlay-content .text .brand {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.overlay-content .text p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Luk-knap i overlay */
+.overlay .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    color: #000;
+    cursor: pointer;
+}
+
+.overlay .close:hover {
+    color: #ff0000;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styling for links and buttons */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivitet for små skærme */
+@media (max-width: 1024px) {
+    .product {
+        width: 23%;
+    }
+
+    .overlay-content {
+        width: 80%;
+    }
+
+    .overlay-content img {
+        width: 40%;
+    }
+
+    .overlay-content .text {
+        width: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: 48%;
+    }
+
+    .overlay-content {
+        width: 90%;
+    }
+
+    .overlay-content {
+        flex-direction: column;
+    }
+
+    .overlay-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay-content .text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
+
+    .overlay-content {
+        width: 90%;
+    }
+
+    .overlay-content img {
+        width: 100%;
+    }
+
+    .overlay-content .text {
+        width: 100%;
+    }
+}
+
+/* Grøn boks i nederste højre hjørne */
+.corner-box {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #28a745; /* Grøn farve */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0; /* Start som skjult */
+    animation: showCartAnimation 0.5s ease-out forwards; /* Animationen for visning */
+}
+
+/* Animation for at vise den grønne boks */
+@keyframes showCartAnimation {
+    0% {
+        transform: scale(0); /* Start som usynlig */
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1); /* Slut med normal størrelse */
+        opacity: 1;
+    }
+}
+
+/* Indkøbskurv-overlay */
+#cart-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1001;
+    overflow: auto;
+    padding-top: 60px;
+}
+
+#cart-overlay.open {
+    display: block;
+}
+
+#cart-overlay .cart-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 60%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
